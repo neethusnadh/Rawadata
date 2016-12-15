@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rawdata</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/new-style.css" rel="stylesheet">
+ <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- comment something here otherwise nobody wil understands the div -->
+<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-12">
+	</div>
+</div>
+<div class="wrapper wrapper-content animated fadeIn">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="ibox float-e-margins box-bg">
+				<div class="ibox-title normal-box-title">
+					<h5>New Gate-In</h5>
+				</div>
+				<div class="ibox-content">
+					<!--form start-->
+					<form class="form-horizontal" role="form" name="gateInForm" ng-submit="$ctrl.gateIn($ctrl.gateInParams)" novalidate>
+
+						<div class="row">
+
+							<!--left-box-->
+							<div class="col-md-6">
+
+								<!--line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Line">Line</label></div>
+									<div class="col-sm-8 m-b">
+										<input type="text" name="autoLine" ng-model="$ctrl.gateInParams.line_code" uib-typeahead="line.code for line in $ctrl.lines | filter:$viewValue | limitTo:8 "
+											value="" placeholder="Search Lines" typeahead-no-results="noResults" autocomplete="off" class="form-control" ng-maxlength="8"
+											required="">
+										<div class="m-t-xs" ng-show="gateInForm.autoLine.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.autoLine.$error.required">Please select a line</small>
+											<small class="text-danger" ng-show="gateInForm.autoLine.$error.maxlength">your line cannot be longer than 8 characters</small>
+										</div>
+										<div ng-show="noResults">
+											<i class="glyphicon glyphicon-remove"></i> No Results Found
+										</div>
+									</div>
+								</div>
+
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Document ">Document Type</label></div>
+									<div class="col-sm-8 m-b">
+										<input type="text" id="product_name" name="Document" ng-model="$ctrl.gateInParams.document" value="" placeholder="Document Type"
+											ng-maxlength="256" required="" class="form-control">
+										<div class="m-t-xs" ng-show="gateInForm.Document.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.Document.$error.required">Please enter  documnet type</small>
+											<small class="text-danger" ng-show="gateInForm.Document.$error.maxlength">your documnet type cannot be longer than 8 characters</small>
+										</div>
+									</div>
+								</div>
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="ContainerNo ">Container No</label></div>
+									<div class="col-sm-8 m-b">
+										<input type="text" name="ContainerNo" ng-model="$ctrl.gateInParams.container_number" uib-typeahead="container.number for container in $ctrl.container | filter:$viewValue | limitTo:8 "
+											value="" placeholder="Container No" typeahead-no-results="noResults" required="" ng-maxlength="32" class="form-control">
+										<div ng-show="noResults">
+											<i class="glyphicon glyphicon-remove"></i> No Results Found
+										</div>
+										<div class="m-t-xs" ng-show="gateInForm.ContainerNo.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.ContainerNo.$error.required">Please select the container nunber </small>
+											<small class="text-danger" ng-show="gateInForm.ContainerNo.$error.maxlength">your container number cannot be longer than 32 characters</small>
+										</div>
+									</div>
+								</div>
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Date ">G/I Date</label></div>
+									<div class="col-sm-8 m-b">
+										<p class="input-group">
+											<input type="text" class="form-control" name="gateInDate" uib-datepicker-popup ng-model="$ctrl.gateInParams.gate_in_date_format"
+												is-open="$ctrl.popup.opened" datepicker-options="$ctrl.dateOptions" placeholder="Gate-in Date" show-button-bar="false"
+												required />
+											<span class="input-group-btn">
+                  					<button type="button" class="btn btn-default date-font" ng-click="$ctrl.datePickerOpen()">
+                  					<i class="glyphicon glyphicon-calendar"></i></button>
+                 						 </span>
+										</p>
+										<div class="m-t-xs" ng-show="gateInForm.gateInDate.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.gateInDate.$error.required">Please enter the gate-in date</small>
+										</div>
+									</div>
+								</div>
+
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="User">User</label></div>
+									<div class="col-sm-8 m-b">
+										<input type="text" id="product_name" name="User" ng-model="$ctrl.gateInParams.user" value="" placeholder="User" required=""
+											ng-maxlength="64" class="form-control">
+										<div class="m-t-xs" ng-show="gateInForm.User.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.User.$error.required">Plese enter user</small>
+											<small class="text-danger" ng-show="gateInForm.User.$error.maxlength">your user cannot be longer than 64 characters</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--End-line-box-->
+							<!--End-left-box-->
+
+							<!--Right-box-->
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Customer Name">Customer Name</label><small>(If present)</small></div>
+									<div class="col-sm-8 m-b">
+										<input type="text" id="product_name" name="CustomerName " ng-model="$ctrl.gateInParams.customer_name " value="
+                      						" placeholder="Customer Name " ng-maxlength="256" class="form-control ">
+										<div class="m-t-xs" ng-show="gateInForm.CustomerName.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.CustomerName.$error.axlength">your customer name cannot be longer than 256</small>
+										</div>
+									</div>
+								</div>
+								<!--End-line-box-->
+								<div class="form-group ">
+									<div class="col-sm-4 "><label class="control-label " for="Document ">Document No</label></div>
+									<div class="col-sm-8 m-b ">
+										<input type="text " id="product_name " name="DocumentNo " ng-model="$ctrl.gateInParams.document_number
+                      					" value="" placeholder="Document No " required="" ng-maxlength="32" class="form-control">
+										<div class="m-t-xs" ng-show="gateInForm.DocumentNo.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.DocumentNo.$error.required">Plese enter document number</small>
+											<small class="text-danger" ng-show="gateInForm.DocumentNo.$error.maxlength">your document number cannot be longer than 32 characters</small>
+										</div>
+									</div>
+								</div>
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Deliveredby ">Delivered by</label></div>
+									<div class="col-sm-8 m-b">
+										<input type="text" id="product_name" name="Deliveredby" ng-model="$ctrl.gateInParams.deliverd_by" value="" placeholder="Delivered by"
+											required="" ng-maxlength="64" class="form-control">
+										<div class="m-t-xs" ng-show="gateInForm.Deliveredby.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.Deliveredby.$error.required">Plese enter delivered by </small>
+											<small class="text-danger" ng-show="gateInForm.Deliveredby.$error.maxlength">your delivered by cannot be longer than 64 characters</small>
+										</div>
+									</div>
+								</div>
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Time ">G/I  Time</label></div>
+									<div class="col-sm-8 ">
+										<div>
+											<uib-timepicker ng-model="$ctrl.gateInParams.gate_in_time_format" name="gateInTime" hour-step="1" minute-step="1" required=""
+												show-meridian="true">
+											</uib-timepicker>
+											<div class="m-t-xs" ng-show="gateInForm.gateInTime.$invalid && $ctrl.submitted">
+												<small class="text-danger" ng-show="gateInForm.gateInTime.$error.required">Plese enter gate-in time</small>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--End-line-box-->
+								<div class="form-group">
+									<div class="col-sm-4"><label class="control-label" for="Remarks">Remarks</label></div>
+									<div class="col-sm-8 m-b">
+										<textarea type="text" id="product_name" name="Remarks" ng-model="$ctrl.gateInParams.remarks" value="" placeholder="Remarks"
+											required="" class="form-control"> </textarea>
+										<div class="m-t-xs" ng-show="gateInForm.Remarks.$invalid && $ctrl.submitted">
+											<small class="text-danger" ng-show="gateInForm.Remarks.$error.required">Plese enter the remarks</small>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<!--End-line-box-->
+							<!--End-Right-box-->
+							<div class="col-lg-12">
+								<div class="ibox-footer">
+									<div class="form-group">
+										<!--    <div class="col-sm-6 col-sm-offset-8">-->
+										<div class=" pull-right">
+											<button class="btn btn-white Yard-text-align m-r-sm" type="reset">Cancel</button>
+											<button class="btn btn-success Yard-text-align m-r-sm" type="submit">Submit</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

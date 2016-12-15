@@ -1,0 +1,808 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rawdata</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/new-style.css" rel="stylesheet">
+ <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header blue-skin">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Wilson Thomas</strong>
+                             </span> <span class="text-muted text-xs block">General Manager <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="Yard-Dashboard.html"><i class="fa fa-th-large"></i> 
+                    <span class="nav-label">Dashboards</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Estimate</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="View-Est-List-Yard.html">View Estimate</a></li>
+                        <li><a href="#">Upload Photos</a></li> 
+                        <li><a href="#">Upload RC</a></li> 
+                    </ul>
+                </li>
+                
+                
+                <li>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Survey</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="Physical-Survey-Yard.html">Physical Survey</a></li>
+                        <li><a href="Joint-Survey-Yard.html">Joint Survey</a></li>
+                        <li><a href="Post-Repair-Survey-Yard.html">Post Repair Survey</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">In/Out</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="GateIn-List-Yard.html">GateIn List</a></li>
+                        <li><a href="Gate-Out-List-Yard.html">GateOut List</a></li>
+                        <li><a href="#">In/Out Report</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa  fa-file-text-o"></i> <span class="nav-label">Billing</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="Prepare-Invoice-Yard.html">Prepare Invoice</a></li>
+                       
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-question-circle"></i> <span class="nav-label">Help</span>  </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-info-circle"></i> <span class="nav-label">About</span></a>
+                </li>
+                
+              
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-success " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom m-t-sm" action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control search-1" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <!--li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to RawData+ Admin Theme.</span>
+                </li-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="#">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!--<li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>-->
+                <!--<li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>-->
+            </ul>
+
+        </nav>
+        </div>
+            
+            <!--main-wraper-->
+            <div class="wrapper wrapper-content animated fadeIn" style="padding-right:0px !important;">
+              <!--Details-Form-Div-->
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins box-bg">
+                        <div class="ibox-title normal-box-title">
+                            <h5>Estimate Details</h5>
+                        </div>
+                        <div class="ibox-content"><!--form-start-->
+                          <form method="get" class="form-horizontal">
+                            <div class="form-group "> 
+                             <div class="col-lg-12">
+                               <div  class="col-md-3">
+                                 <label class="control-label m-b-xs ">Estimate Number</label>
+                                 <input type="text" class="form-control form-box-h form-new-f">
+                              </div>
+                              <div  class="col-md-3">
+                                <label class=" control-label m-b-xs "> Reference Number</label>
+                                <input type="text" class="form-control form-box-h form-new-f">
+                             </div>
+                             <div  class="col-md-3">
+                               <label class="control-label m-b-xs ">Container Number</label>
+                               <input type="text" class="form-control form-box-h form-new-f">
+                             </div>
+                             <div  class="col-md-3">
+                                <label class="control-label m-b-xs ">Estimate Type</label>
+                                <input type="text" class="form-control form-box-h form-new-f">
+                             </div>
+                            </div>
+                            <div class="col-lg-12">
+                             <div  class="col-md-3">
+                                <label class="control-label m-b-xs ">Line</label>
+                                <select class="form-control no-padding form-box-h form-new-f" name="account">
+                                   <option>Select</option>
+                                   <option>option 2</option>
+                                   <option>option 3</option>
+                                   <option>option 4</option>
+                                </select>
+                              </div>
+                              <div  class="col-md-3">
+                                  <label class="control-label m-b-xs ">Estimate Date</label>
+                                  <div class=" input-group date">
+                                   <span class="input-group-addon form-box-h addon-new"><i class="fa fa-calendar"></i></span>
+                                   <input id="date_added" type="text" class="form-control form-box-h form-new-f" value="03/04/2014">
+                                  </div>
+                                </div>
+                                
+                                <div  class="col-md-3">
+                                <label class=" control-label m-b-xs ">GateIn Date</label>
+                                 <div class=" input-group date">
+                                   <span class="input-group-addon form-box-h addon-new"><i class="fa fa-calendar"></i></span>
+                                   <input id="date_added" type="text" class="form-control form-box-h form-new-f" value="03/04/2014">
+                                  </div>
+                                </div>
+                            
+                                <div  class="col-md-3">
+                                  <label class="control-label  m-b-xs ">Container Type</label>
+                                  <input type="text" class="form-control form-box-h form-new-f">
+                                </div>
+                                
+                               </div>
+                               <div class="col-lg-12">
+                               <div  class="col-md-3">
+                                   <label class="control-label m-b-xs ">DOM</label>
+                                   <div class="input-group date">
+                                   <span class="input-group-addon form-box-h addon-new"><i class="fa fa-calendar"></i></span>
+                                   <input id="date_added" type="text" class="form-control form-box-h form-new-f" value="03/04/2014">
+                                  </div>
+                                </div>
+                                <div  class="col-md-3 ">
+                                 <label class=" control-label  m-b-xs ">Currency</label>
+                                 <input type="text" class="form-control form-box-h form-new-f">
+                                </div>
+                                <div  class="col-md-3">
+                                 <label class=" control-label">Man Hour Rate</label>
+                                 <input type="text" disabled class="form-control form-box-h form-new-f">
+                                </div>
+                                <div  class="col-md-3">
+                                <label class="control-label m-l-sm">Previous  Grade /Present Grade</label>
+                                <div class="col-md-6"><input type="text" class="form-control m-l-n" placeholder="Previous Grade "></div>
+                                <div class="col-md-6"><input type="text" class="form-control form-box-h form-new-f" placeholder="Present Grade "> </div>
+                                  <span class="help-block m-b-none"><a href="#"><small>Grade Details</small>
+                                  </a></span>
+                              
+                                
+                                </div>
+                                 </div>
+                               
+                                
+                                <div class="col-lg-12 m-b-n-lg">
+                                 <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                   <button class="btn btn-success Yard-text-align m-r-sm pull-right" type="submit"><i class="fa fa-floppy-o"></i>&nbsp;&nbsp;<span class="bold">Save</span></button>
+                                    </div></div>
+                               <!--End-Estimate Details--> 
+                               
+                                <!--Submit-->
+                                 
+                                </div>
+                            </form><!--form-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--End-Estimate Details-->
+            <div class="row">
+             <div class="col-lg-12">
+                                <div class="ibox float-e-margins box-bg">
+                                <!--form--title-->
+                                    <div class="ibox-title normal-box-title">
+                                        <h5>Damage Details</h5>
+                                        
+                                    </div><!--End-form--title-->
+                                    <!--Form-content-start-->
+                                    <div class="ibox-content">
+                                    <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                    
+                                            <thead>
+                                            <tr>
+  <th colspan="11" class="table-hed table-col-bg cc-r-table">Damage Details</th>
+  <th colspan="4" class="table-hed table-col-bg cc-table">Cost Calculation - <br>Replair Cost</th>
+  
+    <th colspan="2" class="table-hed table-col-bg cc-table"></th>
+     <th colspan="4"  class="table-hed table-col-bg cc-r-table"></th>
+ </tr>
+                                            <tr class="td-padding">
+                                                <th  class="td-padding cc-r-table"><small>Cntnr Face</small></th>
+                                                <th  class="td-padding cc-r-table"><small>Dmge Cmp</small></th>
+                                                <th  class="td-padding cc-r-table"><small>Damage</small></th>
+                                                <th  class="td-padding cc-r-table"><small>Repair</small></th>
+                                               <th  class="td-padding cc-r-table"><small>L</small></th>
+                                                <th  class="td-padding cc-r-table"><small>W</small></th>
+                                                 <th  class="td-padding cc-r-table"><small>Units </small></th>
+                                                <th  class="td-padding cc-r-table"><small>Qtit</small>y</th>
+                                                <th  class="td-padding cc-r-table"><small>Loc Code</small></th>
+                                                <th  class="td-padding cc-r-table"><small>MDM</small></th>
+                                                 <th  class="td-padding cc-r-table"><small>Responsibilty</small></th>
+                                                  <th  class="td-padding cc-table"><small>Man Hr</small></th>
+                                                <th  class="td-padding cc-table"><small>Lbor Cost</small></th>
+                                                <th  class="td-padding cc-table"><small>Matrl</small></th>
+                                                <th  class="td-padding cc-table"><small>Tot Repair Cost</small></th>
+                                                 
+                                                 <th  class="td-padding cc-table"><small>Final <br>Repair cost</small></th>
+                                                <th  class="td-padding cc-table"><small>Remarks</small></th>
+                                                 <th  class="td-padding cc-r-table"><small>ImgLink</small></th>
+                                                   <th  class="td-padding cc-r-table"><small>Edit</small></th>
+                                                <th  class="td-padding cc-r-table"></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            <tr>
+                                                <td  class="td-padding cc-r-table" title="Bottom"><small>B(19-B)</small></td>
+                                                <td  class="td-padding cc-r-table" title="Floor"><small>F(35-FPP)</small></td>
+                                                <td  class="td-padding cc-r-table" title="Broken"><small>BR(230BR)</small></td>
+                                                <td  class="td-padding cc-r-table"><small>Split(496)</small></td>
+                                              <td  class="td-padding cc-r-table"><small>4</small></td>
+                                                <td  class="td-padding cc-r-table"><small>4</small></td>
+                                                <td  class="td-padding cc-r-table"><small>ft</small></td>
+                                                <td  class="td-padding cc-r-table"><small>0</small></td>
+                                                 <td  class="td-padding cc-r-table"><small>BL12</small></td>
+                                                <td  class="td-padding cc-r-table"><small>121</small></td>
+                                                  <td  class="td-padding cc-r-table"><small>Customer</small></td>
+                                                 <td  class="td-padding cc-table"><small>10</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                 
+                                                 <td  class="td-padding cc-table"><small>200</small></td>
+                                                <td  class="td-padding cc-table"><small>ABCD</small></td>
+                                                 <td  class="td-padding cc-r-table"><small><a href="#">link</a></small></td>
+                                                <td  class="td-padding cc-r-table"><small><i class="fa fa-pencil-square"></i></small></td>
+                                               <td  class="td-padding cc-r-table"><small><i class="fa fa-trash-o"></i></small></td>
+                                              
+                                            </tr>
+                                             <tr>
+                                                <td  class="td-padding cc-r-table" title="Bottom"><small>B(19-B)</small></td>
+                                                <td  class="td-padding cc-r-table" title="Floor"><small>F(35-FPP)</small></td>
+                                                <td  class="td-padding cc-r-table" title="Broken"><small>BR(230BR)</small></td>
+                                                <td  class="td-padding cc-r-table"><small>Split(496)</small></td>
+                                              <td  class="td-padding cc-r-table"><small>4</small></td>
+                                                <td  class="td-padding cc-r-table"><small>4</small></td>
+                                                <td  class="td-padding cc-r-table"><small>ft</small></td>
+                                                <td  class="td-padding cc-r-table"><small>0</small></td>
+                                                 <td  class="td-padding cc-r-table"><small>BL12</small></td>
+                                                <td  class="td-padding cc-r-table"><small>121</small></td>
+                                                  <td  class="td-padding cc-r-table"><small>Customer</small></td>
+                                                 <td  class="td-padding cc-table"><small>10</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                 
+                                                 <td  class="td-padding cc-table"><small>200</small></td>
+                                                <td  class="td-padding cc-table"><small>ABCD</small></td>
+                                                 <td  class="td-padding cc-r-table"><small><a href="#">link</a></small></td>
+                                                <td  class="td-padding cc-r-table"><small><i class="fa fa-pencil-square"></i></small></td>
+                                               <td  class="td-padding cc-r-table"><small><i class="fa fa-trash-o"></i></small></td>
+                                              
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                          </div>
+                                     </div> <!--End-Form-Content-Start-->  
+                                </div>
+                </div>  <!--End Damage Details-->
+            </div>  <!--End raw-->
+             <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins box-bg">
+                        <div class="ibox-title normal-box-title">
+                            <h5>Add Details </h5>
+                            
+                        </div>
+                        <div class="ibox-content"><!--form-start-->
+                          <form method="get" class="form-horizontal">
+                            <div class="form-group "> <div class="col-md-12 ">
+                         
+                              
+                                <!--Cleaning Estimate-->
+                               <div class="col-md-12">
+                              
+                               <h3>Cleaning Estimate</h3>
+                         <div class="hr-line-dashed"></div>
+                        </div>
+                                <div class="col-md-4">
+                                <div class="form-group"><label class="col-sm-5 control-label">Cleaning Method</label>
+
+                                    <div class="col-sm-7"><input type="text" class="form-control "></div>
+                                </div></div>
+                                <div class="col-md-4">
+                                <div class="form-group"><label class="col-sm-5 control-label">Responsibility</label>
+
+                                    <div class="col-sm-7"><input type="text" disabled="" placeholder="Customer" class="form-control"></div>
+                                </div></div>
+                                <div class="col-md-4">
+                                <div class="form-group"><label class="col-sm-5 control-label">Cleaning Cost</label>
+
+                                    <div class="col-sm-7"><input type="text"  disabled="" class="form-control"></div>
+                                </div></div>
+                                <!--End Cleaning Estimate-->
+                               <!-- Damage Details-->
+                                 <div class="col-md-12">
+                               
+                               <h3>Damage Details</h3>
+                         <div class="hr-line-dashed"></div>
+                        </div>
+                        <div class="col-md-6">
+                                 <div class="col-md-4">
+                                <label class=" control-label">Container Face</label>
+
+                                    <input type="text" class="form-control form-box-h">
+                                                                    </div>
+                                <div class="col-md-4">
+                            <label class="control-label">Damage Component</label>
+
+                                 <input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                                <label class="control-label">Damage</label>
+
+                                    <input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                                <label class="control-label">Repair</label>
+
+                                   <input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                                <label class="control-label">Loc Code</label>
+
+                                   <input type="text" class="form-control form-box-h">
+                                                                   </div>
+                                <div class="col-md-4">
+                                <label class=" control-label">MDM</label>
+
+                                   <input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                                <label class=" control-label" style="
+    text-align: right;
+">Length</label>
+<input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                                <label class="control-label">Width</label>
+                                <input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                                <label class="control-label">Units</label>
+
+                                <input type="text" class="form-control form-box-h">
+                                </div>
+                                <div class="col-md-4">
+                               <label class=" control-label">Quantity</label>
+
+                                    <input type="text" class="form-control form-box-h">
+                                </div>
+                                </div>
+                                <!--End-Cleaning Estimate-->
+                                 <div class="col-md-6"> <div class="form-group"><label class="col-sm-3 control-label">Remark</label>
+                               
+                                   <div class="col-sm-9"> <textarea class="form-textarea" placeholder="Message"></textarea>
+                                </div></div> 
+                           <div class="form-group"><label class="col-sm-3 control-label">Add Photo</label>
+                               
+                                   <div class="col-sm-9"><div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                            </div>
+                                </div></div>
+                              
+                                </div>
+                                
+                                <!--Cost Calculation-->
+                                 <div class="col-md-12">
+                               <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                    
+                                            <thead>
+                                            <tr>
+  <th colspan="4" class="table-hed table-col-bg cc-table">Cost Calculation - <br>Replair Cost</th>
+  <th colspan="4" class="table-hed table-col-bg cc-r-table">Cost Calculation -<br>Replacement Cost</th>
+  <th colspan="1" class="table-hed table-col-bg cc-r-table"></th>
+    </tr>
+                                            <tr class="td-padding">
+                                                  <th  class="td-padding cc-table"><small>Man Hr</small></th>
+                                                <th  class="td-padding cc-table"><small>Lbor Cost</small></th>
+                                                <th  class="td-padding cc-table"><small>Matrl</small></th>
+                                                <th  class="td-padding cc-table"><small>Tot Repair Cost</small></th>
+                                                 <th  class="td-padding cc-r-table"><small>Man Hr</small></th>
+                                                <th  class="td-padding cc-r-table"><small>Labr Cost</small></th>
+                                                <th  class="td-padding cc-r-table"><small>Matrl Cost</small></th>
+                                                <th  class="td-padding cc-r-table"><small>Tot Repl Cost</small></th>
+                                                 <th  class="td-padding cc-table"><small>Final <br>Repair cost</small></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            <tr>
+                                                 <td  class="td-padding cc-table"><small>10</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                 <td  class="td-padding cc-r-table"><small>20</small></td>
+                                                <td  class="td-padding cc-r-table"><small>600</small></td>
+                                                <td  class="td-padding cc-r-table"><small>200</small></td>
+                                                <td  class="td-padding cc-r-table"><small>600</small></td>
+                                                 <td  class="td-padding cc-table"><small>200</small></td>
+                                              
+                                            </tr>
+                                             <tr>
+                                                 <td  class="td-padding cc-table"><small>10</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                <td  class="td-padding cc-table"><small>300</small></td>
+                                                 <td  class="td-padding cc-r-table"><small>20</small></td>
+                                                <td  class="td-padding cc-r-table"><small>600</small></td>
+                                                <td  class="td-padding cc-r-table"><small>200</small></td>
+                                                <td  class="td-padding cc-r-table"><small>600</small></td>
+                                                 <td  class="td-padding cc-table"><small>200</small></td>
+                                                
+                                              
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                          </div>
+                        </div>
+                                
+                                
+                                
+                                
+                                <!--End-Cost Calculation-->
+                                
+                                
+                               
+                                <!--EndCostCalculation-->
+                                <!--Submit-->
+                                 <div class="col-lg-12 m-b-n-lg">
+                                 <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                   <button class="btn btn-success Yard-text-align m-r-sm pull-right" type="submit"><i class="fa fa-plus-square"></i>&nbsp;&nbsp;<span class="bold">Add Row</span></button>
+                                    </div></div>
+                                </div>
+                            </form><!--form-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Damage Details-->
+            
+                  
+            <!--Summary Details-->
+        <div class="col-lg-12">
+                                <div class="ibox float-e-margins box-bg">
+                                    <div class="ibox-title normal-box-title">
+                                        <h5>Summary</h5>
+                                        
+                                    </div>
+                                    <div class="ibox-content">
+                                    <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                    
+                                            <thead>
+                                         
+                                            <tr>
+                                                <th>Cleaning charges</th>
+                                                <th>Labour charges</th>
+                                                <th>Material cost</th>
+                                                <!--<th>Estimate Cost</th>-->
+                                               <th>Estimate Amount</th>
+                                                <th>Service Tax  4%</th>
+                                                 <th>VAT 0.6% </th>
+                                                <!--<th>User Id</th>-->
+                                                <th>Total Amount</th>
+                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            <tr>
+                                                <td><small>111</small></td>
+                                                <td><small>222</small></td>
+                                                <td><small>202</small></td>
+                                                <!--<td><small>258</small></td>-->
+                                              <td><small>253</small></td>
+                                                <td><small>12.5</small></td>
+                                                <td><small>1.22</small></td>
+                                                <!--<td><small>0IN</small></td>-->
+                                                 <td><small>1258</small></td>
+                                                
+                                            </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                        </div> 
+                                     </div>   
+                                </div>
+                            </div><!--End-Summary Details--->
+                            <!--Button-->
+                            <div class="col-lg-12">
+                  <div class="ibox-footer footer-butt" >
+                    <div class="form-group">
+                            <!--    <div class="col-sm-6 col-sm-offset-8">-->
+                                    <div class="pull-right">
+                                        
+                                        <button class="btn btn-success Yard-text-align m-r-sm" type="submit"><i class="fa fa-check"></i>&nbsp;&nbsp;<span class="bold">Submit </span></button>
+                                         <button class="btn btn-default Yard-text-align m-r-sm" type="submit"><i class="fa fa-ban"></i>&nbsp;&nbsp;<span class="bold"> Cancel</span></button>
+                                         <button class="btn btn-success Yard-text-align m-r-sm" type="submit">
+                                         <a href="Add-View-Bulk-Photos-Yard.html" class="a-color-butt"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">Add Bulk Photos</span></a></button>
+                                         <button class="btn btn-success Yard-text-align" type="submit"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;<span class="bold">Save As Draft</span></button>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                  </div><!--End-Button-->
+
+         
+                          
+  </div>
+
+  
+        </div>
+        <div id="right-sidebar">
+            
+
+<div id="small-chat">
+
+            <span class="badge badge-warning pull-right">5</span>
+            <a class="open-small-chat">
+                <i class="fa fa-comments"></i>
+
+            </a>
+        </div>
+        <div class="small-chat-box fadeInRight animated">
+
+            <div class="heading" draggable="true">
+                <small class="chat-date pull-right">
+                    02.19.2015
+                </small>
+                Small chat
+            </div>
+
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;"><div class="content" style="overflow: hidden; width: auto; height: 234px;">
+
+                <div class="left">
+                    <div class="author-name">
+                        Monica Jackson <small class="chat-date">
+                        10:02 am
+                    </small>
+                    </div>
+                    <div class="chat-message active">
+                        Lorem Ipsum is simply dummy text input.
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="author-name">
+                        Mick Smith
+                        <small class="chat-date">
+                            11:24 am
+                        </small>
+                    </div>
+                    <div class="chat-message">
+                        Lorem Ipsum is simpl.
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="author-name">
+                        Alice Novak
+                        <small class="chat-date">
+                            08:45 pm
+                        </small>
+                    </div>
+                    <div class="chat-message active">
+                        Check this stock char.
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="author-name">
+                        Anna Lamson
+                        <small class="chat-date">
+                            11:24 am
+                        </small>
+                    </div>
+                    <div class="chat-message">
+                        The standard chunk of Lorem Ipsum
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="author-name">
+                        Mick Lane
+                        <small class="chat-date">
+                            08:45 pm
+                        </small>
+                    </div>
+                    <div class="chat-message active">
+                        I belive that. Lorem Ipsum is simply dummy text.
+                    </div>
+                </div>
+
+
+            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div></div>
+            <div class="form-chat">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn"> <button class="btn btn-success " type="button">Send
+                </button> </span></div>
+            </div>
+
+        </div>
+
+        </div>
+            <!--End--main-wraper--> 
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2017
+            </div>
+        </div>
+
+        </div>
+        
+        
+    </div>
+
+   <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+ <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+</body>
+</html>
