@@ -329,21 +329,16 @@
 
         </nav>
         </div>
-        <!--start-page-cont-->
-        <!--Top-wrapper-head-show-list-->
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-12">
-                    <h2> Repair Completed</h2>
-                    <!--start-bg box-->
+                    <h2>Repair Pending</h2>
                    <div class="yard-top-bar text-center top-bar-p">
                          <!--Line-->
-                         <div class="col-sm-1">
-                           <label class="control-label  m-t-md-1" for="product_name">Line</label>
-                         </div>
+                         
                         
-                         <div class="col-sm-2  m-t-md ">
+                         <div class="col-sm-2 ">
                            <div class="form-group">
-                           
+                           <label class="control-label" for="product_name">Line</label>
                             <input type="text" id="price"  name="yard_code" value="" placeholder="Autocomplete" class="form-control" >           </div>
                         </div> <!--Line-End-->
                         <!--From-->
@@ -369,145 +364,135 @@
                          </div>
                      </div> <!--End-To-->
                      <!--Status-->
-                     
+                    
                     <!--Show List button-->
                     <div class="col-sm-2">
-                        <button class="btn btn-success Yard-text-align m-t-md btn-sm " type="submit">
+                        <button class="btn btn-success btn-sm Yard-text-align m-t-md " type="submit">
                           
                           <span class="bold">Show List</span>
                         </button>
                     </div> <!--End Show List button-->
                     
-                  </div> <!--End-bg box-->
-                </div> <!--Col-lg-12-->
-             </div><!--End-Top-wrapper-head-show-list-->
-            
-         <!--Table-wrapper-head-show-list-->   
+                  </div>
+                </div>
+                
+            </div>
         <div class="wrapper wrapper-content animated fadeIn">
-        <div class="row">
-<div class="col-lg-12">
+             <div class="row">
+                <div class="col-lg-12">
                     <div class="ibox float-e-margins box-bg">
                         <div class="ibox-title normal-box-title">
-                            <h5></h5>
+                            <h5 class="m-l-sm">Repair Pending</h5>
                         </div>
-                        <div class="ibox-content">
-                        <div class="row">
-                        
-                    <div class="table-responsive">
-                              
-                                <table class="table table-bordered table-hover">
-                                    <thead>
-                                    <tr class="text-center">
-
-                                       <th>Sl No </th>
-                                       <th>Region</th>
-                                       <th>Line</th>
-                                       <th>Estimate No</th>
-                                       <th>Estimate Date</th>
-                                       <th>Estimate Type</th>
-                                       <th>Container No</th>
-                                       <th>Estimate Approved Date</th>
-                                       <th>Approved By</th>
-                                       <th>Repair Date</th>
-                                       <th>Repair Amount</th>
-                                       <th>Clean Amount</th>
-                                       <th>Currncy</th>
-                                       <th>Post Repair <br>Photo Upload </th>
-                                       <th>View Photos</th>
-                                       
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr><input type=" checkbox" name="">
-                                       <td></td> 
-                                        <td>Mundra</td>
-                                        <td> TAL</td>
-                                        <td>  <a href="#">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>IICLV</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>RAM</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td> 
-                                        <td>1200</td> 
-                                        <td>INR</td>
-                                        <td><i class="fa fa-upload"></i></td> 
-                                        <td> <i class="fa fa-eye"></i></td>
-                                        
-                                    </tr>
-                                    
-                                    <tr>
-                                        
-                                        <td>Cochin</td>
-                                         <td> TAL</td>
-                                        <td>  <a href="#">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>Inservice</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>RAM</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td> 
-                                        <td>1200</td> 
-                                        <td>INR</td>
-                                        <td><i class="fa fa-upload"></i></td> 
-                                        <td> <i class="fa fa-eye"></i></td>
-                                
+                      <div class="ibox-content">
+                       <div class="row">
+                       <div class="col-md-12">
+                         <div class="table-responsive">
+                              <table class="table table-bordered table-hover">
+                                 <thead>
+                                   <tr class="text-center">
+                                      <th>
+Sl No</th>   
+<th>Region  </th>   
+<th>
+Line </th>   
+<th>   
+Estimate No</th>   
+<th>
+Container No</th>   
+<th>    
+Estimate Date </th>   
+<th>  
+Estimate Type</th>   
+<th>
+Ageing (In days)</th>   
+<th>
+Repair Amount</th>   
+<th>   
+Clean Amount </th>   
+<th>   
+Currncy </th>
+                                   </tr>
+                                 </thead>
+                              <tbody>
+                                   <tr>
+                                      <td><input type="checkbox" checked="" value=""></td>
+                                      <td>Mundra</td>
+                                      <td> TAL</td>
+                                      <td> EST12</td>
+                                      <td>12/09/16</td>
+                                      <td>IICLV</td>
+                                      <td>TLXU12</td>
+                                      <td>Rep Pen</td>
+                                      <td>12/09/2016</td>
+                                      <td>RAM</td>
+                                      <td>10</td> 
+                                      <td> Nil</td>
+                                      <td>1200</td>
+                                      <td>1200</td>
+                                      <td>INR</td>
+                                     
                                     </tr>
                                     <tr>
-                                        
-                                        <td>Mundra</td>
-                                         <td> TAL</td>
-                                        <td> <a href="#">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>Upgrade</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>MTS</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td> 
-                                        <td>1200</td> 
-                                        <td>INR</td>
-                                        <td><i class="fa fa-upload"></i></td> 
-                                        <td> <i class="fa fa-eye"></i></td>
-                                        
-                                        
+                                    <td><input type="checkbox"  value=""></td>
+                                      <td>Cochin</td>
+                                      <td> TAL</td>
+                                      <td> EST12</td>
+                                      <td>12/09/16</td>
+                                      <td>IICLV</td>
+                                      <td>TLXU12</td>
+                                      <td>Rep Pen</td>
+                                      <td>12/09/2016</td>
+                                      <td>RAM</td>
+                                      <td>10</td> 
+                                      <td> Nil</td>
+                                      <td>1200</td>
+                                      <td>1200</td>
+                                      <td>INR</td>
+                                      
                                     </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                    
-                     <div class="form-group">
+                                    <tr>
+                                    <td><input type="checkbox"  value=""></td>
+                                      <td>Cochin</td>
+                                      <td> TAL</td>
+                                      <td> EST12</td>
+                                      <td>12/09/16</td>
+                                      <td>IICLV</td>
+                                      <td>TLXU12</td>
+                                      <td>Rep Pen</td>
+                                      <td>12/09/2016</td>
+                                      <td>MTS</td>
+                                      <td>10</td> 
+                                      <td> Nil</td>
+                                      <td>1200</td>
+                                      <td>1200</td>
+                                      <td>INR</td>
+                                      
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <!--button-->
+                           <div class="form-group">
                             <!--    <div class="col-sm-6 col-sm-offset-8">-->
                                      <div class=" pull-right">
-                                     <button class="btn btn-success Yard-text-align btn-sm m-r-xxs " type="submit">
-                                     <span class="bold">Edit</span></button>
-                                     
-                                     <button class="btn btn-success Yard-text-align btn-sm m-r-xxs " type="submit">
-                                     <span class="bold">Save</span></button>
-                                        <button class="btn btn-success Yard-text-align btn-sm m-r-xxs " type="submit">
+                                     <button class="btn btn-success btn-sm Yard-text-align  m-r-xxs" type="submit">
+                                       <span class="bold">Update Repair Ststus</span></button>
+                                        <button class="btn btn-success btn-sm Yard-text-align  m-r-xxs" type="submit">
+                                        <span class="bold">Update Repair Completed</span></button>
+                                        <button class="btn btn-success btn-sm Yard-text-align  m-r-xxs" type="submit">
+                                        <span class="bold">Download</span></button>
+                                        <button class="btn btn-success btn-sm Yard-text-align  m-r-xxs" type="submit">
                                        <span class="bold">Back </span></button>
-                                        <button class="btn btn-success Yard-text-align m-r-xxs btn-sm" type="submit"><span class="bold">Download</span></button>
-                                         
-                                         
-                                    </div>
-                                </div>
+                                     </div>
+                            </div>
                         </div>
-                    </div>  </div>
-                    </div>
-                    
-  </div>
-
-      <!--next-sample-->
-         
-
-            
-
-
-
-
-        </div> <!--End-Table-wrapper-head-show-list-->   
+                         </div>
+                   </div> 
+                 </div>
+              </div>
+          </div>
+       </div><!--wrapper-content-->
         <div class="footer">
             <div class="pull-right">
                 10GB of <strong>250GB</strong> Free.

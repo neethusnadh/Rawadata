@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rawdata</title>
+    <title>Inteution</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -332,11 +332,12 @@
         <!--List-top-bar-->
         <div class="row wrapper border-bottom white-bg page-heading">
           <div class="col-lg-12">
-            <h2>Repair Completed</h2>
+            <h2>Document Pending List</h2>
             <div class="yard-top-bar text-center top-bar-p">
                 
                 <!--line-->
-                <div class="col-sm-1">
+                 <div class="col-sm-1"></div>
+                <div class="col-sm-2">
                    <div class="form-group">
                      <label class="control-label" for="product_name">Line</label>
                      <input type="text" id="price"  name="yard_code" value="" placeholder="" class="form-control">
@@ -344,7 +345,7 @@
                 </div>
                 <!--End-line-->
                 <!--Region-->
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                    <div class="form-group">
                      <label class="control-label" for="price">Yard</label>
                      <input type="text" id="price"  name="yard_code" value="" placeholder="" class="form-control">
@@ -355,7 +356,7 @@
                 <!-- Location-->
                 <div class="col-sm-2">
                      <div class="form-group">
-                        <label class="control-label" for="quantity">To Date</label>
+                         <label class="control-label" for="product_name">From Date</label>
                         <div class="input-group date">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         <input id="date_added" type="text" class="form-control" value="03/04/2014">
@@ -367,26 +368,30 @@
                  
                  <div class="col-sm-2">
                    <div class="form-group">
-                     <label class="control-label" for="product_name">From Date</label>
+                    <label class="control-label" for="quantity">To Date</label>
                      <div class="input-group date">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         <input id="date_added" type="text" class="form-control" value="03/04/2014">
                         </div>
                    </div>
                 </div>
-                
-                
-                 <div class="col-sm-2">
-                   <div class="pull-left">
-                    <button class="btn btn-success btn-sm Yard-text-align m-t-md" type="submit">
-                        <span class="bold">Show List</span>
+               
+              
+                 <div class="col-sm-1">
+                       <button class="btn btn-success btn-sm  m-t-md" type="submit">
+                        
+                         <span class="bold">Show List</span>
                        </button>
-                 
-                       <button class="btn btn-success btn-sm Yard-text-align m-t-md" type="submit">
+                      
+                 </div>
+                 <div class="col-sm-1">
+                       <button class="btn btn-success btn-sm  m-t-md" type="submit">
                         
                          <span class="bold">Cancel</span>
                        </button>
+                      
                  </div>
+                 <div class="col-sm-1"></div>
              </div>
            </div>
          </div>
@@ -398,7 +403,7 @@
               <div class="col-lg-12">
                     <div class="ibox float-e-margins box-bg">
                         <div class="ibox-title normal-box-title">
-                            <h5>View Estimate List</h5>
+                            <h5>Document Pending</h5>
                         </div>
                         <div class="ibox-content">
                         <div class="row">
@@ -408,74 +413,52 @@
                     <div class="table-responsive">
                               
                                 <table class="table table-bordered table-hover">
-                                 <thead>
+                                    <thead>
                                     <tr class="text-center">
                                         
                                        <th></th>
-                                       <th>Sl No</th> 
-                                       <th>Region</th> 
-                                       <th>Line</th> 
-                                       <th>Yard</th> 
-                                       <th>Location</th> 
-                                       <th>Estimate No</th> 
-                                       <th>Estimate Date</th>
-                                       <th>Estimate Type </th> 
-                                       <th>Container No</th> 
-                                       <th>Estimate Approved Date </th> 
-                                       <th>Approved By</th>
-                                       <th>Repair Date</th>
-                                       <th>Repair Amount</th>
-                                       <th>Grade    </th> 
-                                       <th>Cleaning Amount</th> 
-                                       <th>Currency</th> 
-                                       <th>Post Repair Survey Photos</th>
-                                       <th>Post Repair Survey Status</th>
-                                      
+                                        <th>SL.<br>No</th>
+                                       <th>Region</th>  
+                                       <th>Line</th>
+                                        <th>Yard </th>
+                                        <th>Location</th>  
+                                        <th>Estimate No</th>  
+                                        <th>Estimate Date </th>  
+                                        <th>Estimate Type </th>  
+                                        <th>Container No </th>  
+                                        <th>Bill No </th>  
+                                        <th>Estimate Approval Date </th>  
+                                        <th>Approval By  </th>  
+                                        <th>Ageing(In Days) </th>  
+                                        <th>Repair Amount  </th>  
+                                        <th>Clean Amount  </th>  
+                                        <th>Currency</th>  
+                                          
+                                        
                                     </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr>
-                                        <td><input type="checkbox"  value=""></td>
-                                        <td>1</td>
-                                        <td>Cochin </td>
-                                        <td>TAL</td>
-                                        <td>BCT</td>
-                                        <td>Cochin</td>
-                                        <td><a class="a-link">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>IICLV</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>RAM</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td>
-                                        <td><span class="badge badge-primary">A</span></td>
-                                        <td>1200</td>
-                                        <td>INR </td>
-                                        <td>photo</td>
-                                        <td><span class="label label-primary">Confirmed</span></td>
-                                    </tr>
+                                    </thead>
+                                    <tbody>
                                     <tr>
                                         <td><input type="checkbox" checked="" value=""></td>
-                                        <td>1</td>
-                                        <td>Cochin </td>
-                                        <td>TAL</td>
-                                        <td>BCT</td>
-                                        <td>Cochin</td>
-                                        <td><a class="a-link">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>IICLV</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>RAM</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td>
-                                        <td><span class="badge badge-warning">B</span></td>
-                                        <td>1200</td>
-                                        <td>INR </td>
-                                        <td>photo</td>
-                                        <td><span class="label label-warning">Not Confirmed</span></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
+                                    
+                                   
                                     
                                     </tbody>
                                 </table>
@@ -483,13 +466,15 @@
                     
                      <div class="form-group  m-t">
                            
-                        <div class="pull-right">
-                          <button class="btn  btn-sm btn-success Yard-text-align  m-r-xxs" type="submit">
-                             <span class="bold">Edit Repair Date</span></button>
-                             <button class="btn  btn-sm btn-success Yard-text-align  m-r-xxs" type="submit">
-                             <span class="bold">Submit</span></button>
-                          
-                          <button class="btn btn-sm btn-success Yard-text-align m-r-n-xxs " type="submit">
+                                     <div class="pull-right">
+                                     <button class="btn btn-success btn-sm m-r-xxs" type="submit">
+                             <span class="bold">Request For Joint Survey</span></button>
+                                     <button class="btn btn-success btn-sm m-r-xxs" type="submit">
+                             <span class="bold">Document Clearance</span></button>
+                                      <button class="btn btn-success btn-sm m-r-xxs " type="submit">
+                             <span class="bold">Download</span></button>
+                              
+                                        <button class="btn btn-success btn-sm" type="submit">
                              <span class="bold">Back </span></button>
                                          
                                          

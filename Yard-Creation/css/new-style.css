@@ -165,11 +165,41 @@ label{ font-weight:normal;}
     font-size: 17px !important;
     text-align: center;
 }
-.p-a-h{float: left;padding: 0px 0px 0px 8px; font-size: 17px; margin-top:15px;}
+.p-a-h{float: left;padding: 0px 0px 0px 8px; font-size: 17px; margin-top:15pxf;}
 .block-icon{margin-bottom: 10px;float: right;padding: 13px 9px 5px 0px;}
 .nav.navbar-top-links a {
     font-size: 16px !important;
 }
+.p-b-3{
+  padding-bottom: 3px !important;
+}
+.m-t-n-sm-7 {
+    margin-top: -7px;
+}
+.p-a-x{
+  padding: 10px 0px 65px 0px !important;
+  }
+.f-s-16{
+      font-size: 16px;
+    font-weight: normal;
+    padding: 4px 0px 0px 0px;
+}
+.f-s-14{
+    font-size: 14px;
+    font-weight: normal;
+    }
+.p-r-0{ padding-right: 0px !important; }
+.modal-dialog-1{
+    width: 450px;
+    margin: 60px auto;
+}
+.pop-title{
+border-top: none;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+.excel-button{border: 1px solid #34A40B;
+    color: #34A40B;}
 <!--media query-->
 @media (max-width: 768px) {
 .sidebar-chat { width:auto !important; }

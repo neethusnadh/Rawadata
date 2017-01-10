@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rawdata</title>
+
+  <link href="../css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/new-style.css" rel="stylesheet">
+ </head>
+
+<body>
+
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header blue-skin">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Wilson Thomas</strong>
+                             </span> <span class="text-muted text-xs block">General Manager <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-th-large"></i> 
+                    <span class="nav-label">Dashboards</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Estimate</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">View Estimate</a></li>
+                        <li><a href="#">Upload Photos</a></li> 
+                        <li><a href="#">Upload RC</a></li> 
+                    </ul>
+                </li>
+                
+                
+                <li>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Survey</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Physical Survey</a></li>
+                        <li><a href="#">Joint Survey</a></li>
+                        <li><a href="#">Post Repair Survey</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">In/Out</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">GateIn List</a></li>
+                        <li><a href="#">GateOut List</a></li>
+                        <li><a href="#">In/Out Report</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa  fa-file-text-o"></i> <span class="nav-label">Billing</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Prepare Invoice</a></li>
+                       
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-question-circle"></i> <span class="nav-label">Help</span>  </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-info-circle"></i> <span class="nav-label">About</span></a>
+                </li>
+                
+              
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-success " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom m-t-sm" action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control search-1" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <!--li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to RawData+ Admin Theme.</span>
+                </li-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="../img/a7.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="#">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!--<li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>-->
+                <!--<li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>-->
+            </ul>
+
+        </nav>
+        </div>
+            
+            <!--main-wraper-->
+            <div class="row wrapper border-bottom white-bg page-heading">
+          <div class="col-lg-12">
+            <h2>SRC List</h2>
+            <div class="yard-top-bar text-center top-bar-p">
+                
+                <!--line-->
+                <div class="col-sm-1">
+                   <div class="form-group">
+                     <label class="control-label" for="product_name">Line</label>
+                     <input type="text" id="price"  name="yard_code" value="" placeholder="" class="form-control">
+                   </div>
+                </div>
+                <!--End-line-->
+                <!--Region-->
+                <div class="col-sm-1">
+                   <div class="form-group">
+                     <label class="control-label" for="price">Yard</label>
+                     <input type="text" id="price"  name="yard_code" value="" placeholder="" class="form-control">
+                    </div>
+                </div>
+                <!--End-Region-->
+                 <div class="col-sm-2">
+                   <div class="form-group">
+                     <label class="control-label" for="product_name">Container Type</label>
+                     <input type="text" id="price"  name="yard_code" value="" placeholder="autocomplete" class="form-control">
+                   </div>
+                </div>
+                <div class="col-sm-2">
+                   <div class="form-group">
+                     <label class="control-label" for="product_name">Cargo Category</label>
+                     <input type="text" id="price"  name="yard_code" value="" placeholder="autocomplete" class="form-control">
+                   </div>
+                </div>
+                <!-- Location-->
+                <div class="col-sm-2">
+                     <div class="form-group">
+                        <label class="control-label" for="quantity">To Date</label>
+                        <div class="input-group date">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                        </div>
+                     </div>
+                 </div>
+                 <!-- Location-End-->  
+                 <!-- Location-->  
+                 
+                 <div class="col-sm-2">
+                   <div class="form-group">
+                     <label class="control-label" for="product_name">From Date</label>
+                     <div class="input-group date">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                        </div>
+                   </div>
+                </div>
+               
+                 <div class="col-sm-2">
+                   <div class="pull-left">
+                    <button class="btn btn-success btn-sm Yard-text-align m-t-md" type="submit">
+                        <span class="bold">Show List</span>
+                       </button>
+                 
+                       <button class="btn btn-success btn-sm Yard-text-align m-t-md" type="submit">
+                        
+                         <span class="bold">Cancel</span>
+                       </button>
+                 </div>
+             </div>
+           </div>
+         </div>
+          </div>
+         <!--End-List-top-bar-->
+         <div class="wrapper wrapper-content animated fadeIn">
+              <!--Details-Form-Div-->
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins box-bg">
+                        <div class="ibox-title normal-box-title">
+                            <!-- <h5 class="m-l-xs">Estimate Details</h5> -->
+                        </div>
+                        <div class="ibox-content"><!--form-start-->
+                          <form method="get" class="form-horizontal">
+                            <div class="form-group "> 
+                             <div class="col-lg-12 m-l-n">
+                               <div  class="col-md-3">
+                                 <label class="control-label m-b-xs ">Line</label>
+                                 <input type="text" class="form-control form-box-h form-new-f">
+                              </div>
+                              <div  class="col-md-3">
+                                <label class=" control-label m-b-xs "> Yard</label>
+                                <input type="text" class="form-control form-box-h form-new-f">
+                             </div>
+                             <div  class="col-md-3">
+                               <label class="control-label m-b-xs ">Container Type</label>
+                               <input type="text" class="form-control form-box-h form-new-f">
+                             </div>
+                             <div  class="col-md-3">
+                                <label class="control-label m-b-xs ">Cargo Category</label>
+                                <select class="form-control no-padding form-box-h form-new-f" name="account">
+                                        <option >Select</option>
+                                        <option>Normal Cargo</option>
+                                        
+                                        
+                                    </select>
+                             </div>
+                            </div>
+                            <div class="col-lg-12 m-l-n">
+                             <div  class="col-md-3">
+                                <label class="control-label m-b-xs ">Tariff </label>
+                                <input type="text" class="form-control form-box-h form-new-f"  >
+                             
+                              </div>
+                            <div  class="col-md-3">
+                             <label class="control-label m-b-xs ">Currency </label>
+                             <input type="text" class="form-control form-box-h form-new-f" >
+                              </div>
+                          <div  class="col-md-3">
+                            <label class=" control-label m-b-xs ">Max. Insured Amount</label>
+                             <input type="text" class="form-control form-box-h form-new-f">
+                          </div>
+                          <div class="col-md-3">
+                            <label class="control-label  m-b-xs ">From Date</label>
+                            <div class="input-group date">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                        </div>
+                          </div>
+                                
+                               </div>
+                               <div class="col-lg-12 m-l-n">
+                              <div class="col-md-3">
+                            <label class="control-label  m-b-xs ">To Date</label>
+                            <div class="input-group date">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                        </div>
+                          </div>
+                                
+                                
+                                
+                                 </div>
+                               
+                                
+                                <div class="col-lg-12 m-b-n-lg">
+                                 
+                                <div class="form-group">
+                                   <button class="btn btn-success btn-sm Yard-text-align m-r-sm pull-right m-t " type="submit"><span class="bold">Save</span></button>
+                                    </div></div>
+                               <!--End-Estimate Details--> 
+                               
+                                <!--Submit-->
+                                 
+                                </div>
+                            </form><!--form-->
+                        </div>
+                    </div>
+                </div>
+            
+             <!--End-Estimate Details-->
+           
+            
+         
+             
+             <!-- Damage Details-->
+           
+            
+          
+                  
+            <!--Summary Details-->
+        <div class="col-lg-12">
+                                <div class="ibox float-e-margins box-bg">
+                                    <div class="ibox-title normal-box-title">
+                                        <h5>SRC</h5>
+                                        
+                                    </div>
+                                    <div class="ibox-content">
+                                    <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                    
+                                            <thead>
+                                         
+                                            <tr>
+                                            <th></th>
+                                            <th>SL </th>
+                                            
+                                                <th>Line </th>
+                                                <th>Yard</th>
+                                                <th>Container Type</th>
+                                                <!--<th>Estimate Cost</th>-->
+                                               <th>Destuffing</th>
+                                                <th>Cargo Category </th>
+                                                 <th>Tariff </th>
+                                               
+                                                <th>Currency </th>
+                                                <th> Max. Insured Amount</th>
+                                               
+                                                <th>From Date</th>
+                                               
+                                                <th>To Date</th>
+                                               
+                                                <th>User</th>
+                                               
+                                                <th>Updated On</th>
+                                               
+                                                <th>Edit</th>
+
+                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            <tr>
+                                            <td><input type="checkbox" checked="" value=""></td>
+                                            <td>1</td>
+                                               <td> Tal</td> 
+<td>NHV</td> 
+<td>20DV</td> 
+<td>CD</td> 
+<td>Normal Cargo</td> 
+<td>900.0000</td> 
+<td>INR</td> 
+<td>10000.0000</td> 
+<td>12/09/2015</td> 
+<td>12/09/2016</td> 
+<td>AXG</td> 
+<td>27/09/2016</td>
+<td><i class="fa fa-pencil-square"></i></td>
+
+
+
+                                                
+                                            </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                        </div> 
+                                     </div>   
+                                </div>
+                            </div><!--End-Summary Details--->
+                            <!--Button-->
+                            <div class="col-lg-12">
+                  <div class="ibox-footer footer-butt" >
+                    <div class="form-group">
+                            
+                                    <div class="pull-right">
+                                    <button class="btn btn-success btn-sm Yard-text-align m-r-sm" type="submit">
+                                         <a href="#" class="a-color-butt">
+                                         <span class="bold">Delete</span></a></button>
+                                     
+                                         <button class="btn btn-success btn-sm Yard-text-align m-r-sm " type="submit">
+                                         <span class="bold"> Back</span></button>
+                                        
+                                         
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                  </div> 
+
+         
+                          
+  
+
+  
+        </div>
+        
+            <!--End--main-wraper--> 
+       <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2017
+            </div>
+        </div>
+
+        </div>
+      
+
+   <!-- Mainly scripts -->
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../js/inspinia.js"></script>
+    <script src="../js/plugins/pace/pace.min.js"></script>
+
+</body>
+</html>

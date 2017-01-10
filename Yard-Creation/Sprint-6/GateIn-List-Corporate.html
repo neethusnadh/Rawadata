@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Rawdata</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/new-style.css" rel="stylesheet">
- <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-  <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/new-style.css" rel="stylesheet">
+    <link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="../css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -333,181 +330,117 @@
         <!--Top-wrapper-head-show-list-->
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-12">
-                    <h2> Repair Completed</h2>
-                    <!--start-bg box-->
+                    <h2>Gate In List</h2>
+                     <!--start-bg box-->
                    <div class="yard-top-bar text-center top-bar-p">
-                         <!--Line-->
-                         <div class="col-sm-1">
-                           <label class="control-label  m-t-md-1" for="product_name">Line</label>
-                         </div>
-                        
-                         <div class="col-sm-2  m-t-md ">
-                           <div class="form-group">
+                   <div class="col-sm-1"></div>
+                         <div class="col-sm-2">
+                        <div class="form-group">
+                          <label class="control-label" for="product_name">Line</label>
+                            <input type="text" id="price"  name="yard_code" value="" placeholder="Autocomplete" class="form-control" >
                            
-                            <input type="text" id="price"  name="yard_code" value="" placeholder="Autocomplete" class="form-control" >           </div>
-                        </div> <!--Line-End-->
-                        <!--From-->
-                        <div class="col-sm-2">
-                          <div class="form-group">
-                            <label class="control-label" for="quantity">From <small>(Estimate Date)</small></label>
-                            <div class="input-group date">
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                            </div>
-                           </div>
-                       </div> <!--From-End-->
-                       <!--To-->
-                      <div class="col-sm-2">
-                         <div class="form-group">
-                          <label class="control-label" for="quantity">To</label>
-                          <div class="input-group date">
-                                <span class="input-group-addon">
-                                  <i class="fa fa-calendar"></i>
-                                </span>
-                           <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                           </div>
-                         </div>
-                     </div> <!--End-To-->
-                     <!--Status-->
-                     
-                    <!--Show List button-->
-                    <div class="col-sm-2">
-                        <button class="btn btn-success Yard-text-align m-t-md btn-sm " type="submit">
-                          
-                          <span class="bold">Show List</span>
-                        </button>
-                    </div> <!--End Show List button-->
-                    
-                  </div> <!--End-bg box-->
-                </div> <!--Col-lg-12-->
-             </div><!--End-Top-wrapper-head-show-list-->
-            
-         <!--Table-wrapper-head-show-list-->   
-        <div class="wrapper wrapper-content animated fadeIn">
-        <div class="row">
-<div class="col-lg-12">
-                    <div class="ibox float-e-margins box-bg">
-                        <div class="ibox-title normal-box-title">
-                            <h5></h5>
                         </div>
-                        <div class="ibox-content">
-                        <div class="row">
-                        
-                    <div class="table-responsive">
-                              
-                                <table class="table table-bordered table-hover">
-                                    <thead>
-                                    <tr class="text-center">
-
-                                       <th>Sl No </th>
-                                       <th>Region</th>
-                                       <th>Line</th>
-                                       <th>Estimate No</th>
-                                       <th>Estimate Date</th>
-                                       <th>Estimate Type</th>
-                                       <th>Container No</th>
-                                       <th>Estimate Approved Date</th>
-                                       <th>Approved By</th>
-                                       <th>Repair Date</th>
-                                       <th>Repair Amount</th>
-                                       <th>Clean Amount</th>
-                                       <th>Currncy</th>
-                                       <th>Post Repair <br>Photo Upload </th>
-                                       <th>View Photos</th>
-                                       
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr><input type=" checkbox" name="">
-                                       <td></td> 
-                                        <td>Mundra</td>
-                                        <td> TAL</td>
-                                        <td>  <a href="#">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>IICLV</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>RAM</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td> 
-                                        <td>1200</td> 
-                                        <td>INR</td>
-                                        <td><i class="fa fa-upload"></i></td> 
-                                        <td> <i class="fa fa-eye"></i></td>
-                                        
-                                    </tr>
-                                    
-                                    <tr>
-                                        
-                                        <td>Cochin</td>
-                                         <td> TAL</td>
-                                        <td>  <a href="#">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>Inservice</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>RAM</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td> 
-                                        <td>1200</td> 
-                                        <td>INR</td>
-                                        <td><i class="fa fa-upload"></i></td> 
-                                        <td> <i class="fa fa-eye"></i></td>
-                                
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>Mundra</td>
-                                         <td> TAL</td>
-                                        <td> <a href="#">EST12</a></td>
-                                        <td>12/09/16</td>
-                                        <td>Upgrade</td>
-                                        <td>TLXU12</td>
-                                        <td>12/09/2016</td>
-                                        <td>MTS</td>
-                                        <td>12/09/2016</td>
-                                        <td>1200</td> 
-                                        <td>1200</td> 
-                                        <td>INR</td>
-                                        <td><i class="fa fa-upload"></i></td> 
-                                        <td> <i class="fa fa-eye"></i></td>
-                                        
-                                        
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                    
-                     <div class="form-group">
-                            <!--    <div class="col-sm-6 col-sm-offset-8">-->
-                                     <div class=" pull-right">
-                                     <button class="btn btn-success Yard-text-align btn-sm m-r-xxs " type="submit">
-                                     <span class="bold">Edit</span></button>
-                                     
-                                     <button class="btn btn-success Yard-text-align btn-sm m-r-xxs " type="submit">
-                                     <span class="bold">Save</span></button>
-                                        <button class="btn btn-success Yard-text-align btn-sm m-r-xxs " type="submit">
-                                       <span class="bold">Back </span></button>
-                                        <button class="btn btn-success Yard-text-align m-r-xxs btn-sm" type="submit"><span class="bold">Download</span></button>
-                                         
-                                         
-                                    </div>
-                                </div>
-                        </div>
-                    </div>  </div>
                     </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                        <label class="control-label" for="price">Status</label>
+                           <input type="text" id="price"  name="yard_code" value="" placeholder="Yard Code" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                        <label class="control-label" for="quantity">From</label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input id="date_added" type="text" class="form-control" value="03/04/2014">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                        <label class="control-label" for="quantity">To</label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input id="date_added" type="text" class="form-control" value="03/04/2014">
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                    <!-- <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="control-label" for="product_name">Aeging <small>(0-10,10-20,<20)</small></label>
+                            <input type="text" id="currency_name" name="currency_name" value="" placeholder="Aeging" disabled="" class="form-control">
+                        </div>
+                    </div>
+                     -->
+                    <div class="col-sm-2">
+                        <button class="btn btn-success btn-sm m-t-md " type="submit">Search </button>
                     
-  </div>
-
-      <!--next-sample-->
-         
-
-            
-
-
-
-
-        </div> <!--End-Table-wrapper-head-show-list-->   
+                        <button class="btn btn-white btn-sm m-t-md " type="submit">Cancel</button>
+                    </div>
+                     <div class="col-sm-1"></div>
+                       
+                        </div>
+                </div><!--col-lg-12-End-->
+                
+            </div>
+        <!--End-Top-wrapper-head-show-list-->
+        <div class="wrapper wrapper-content animated fadeIn">
+		 <div class="row">
+		  <div class="col-lg-12">
+             <div class="ibox float-e-margins box-bg">
+               <div class="ibox-title normal-box-title">
+                  <h5>Gate-in Status</h5>
+                </div>
+                <div class="ibox-content">
+                  <div class="row">
+                   <div class="col-md-12">
+                    <div class="table-responsive">
+                       <table class="table table-bordered table-hover">
+                           <thead>
+                              <tr class="text-center">
+								  <th></th>
+                                  <th>Sl.No:</th>
+                                  <th>Line</th>
+                                  <th>Container No</th>
+                                  <th>Gate In Status</th>
+                                  <th>Gate In Date</th>
+                                  <th>Aeging</th>
+                                  <th>Employee </th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                               <tr>
+                                 <td><input type="checkbox" value=""></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                              </tbody>
+                        </table>
+                      </div>
+                      <!--button-->
+                      <div class="form-group">
+                       <div class=" pull-right">
+                        <button class="btn btn-success btn-sm" type="submit">UnBlock</button> 
+                            <button class="btn btn-success btn-sm" type="submit">Manual GateIn</button> 
+                            <button class="btn btn-success btn-sm " type="submit">
+                            <span class="bold">Download</span></button>
+                            <button class="btn btn-success btn-sm " type="submit">
+                           Close</button>
+                       </div>
+                     </div><!--End-button-->
+                   </div><!--End--row-->
+                 </div> <!--ibox-content-->
+                 </div> 
+               </div><!--ibox -->
+             </div><!--col-lg-12-->
+           </div><!--row-->
+        </div><!--End-table-wrapper-->
         <div class="footer">
             <div class="pull-right">
                 10GB of <strong>250GB</strong> Free.
@@ -522,15 +455,15 @@
 
 
     <!-- Mainly scripts -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
  <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script src="../js/plugins/iCheck/icheck.min.js"></script>
     <!-- Custom and plugin javascript -->
-    <script src="js/inspinia.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="../js/inspinia.js"></script>
+    <script src="../js/plugins/pace/pace.min.js"></script>
 
     <script>
         $(document).ready(function(){
