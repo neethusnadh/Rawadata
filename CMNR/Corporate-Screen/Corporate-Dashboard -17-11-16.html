@@ -1,0 +1,1254 @@
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rawdata</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="../css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/new-style.css" rel="stylesheet">
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class=" pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+               <li class="nav-header blue-skin">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Wilson Thomas</strong>
+                             </span> <span class="text-muted text-xs block">General Manager <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="Corporate-Dashboard.html"><i class="fa fa-th-large"></i> 
+                    <span class="nav-label">Dashboards</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Estimate</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">View Estimate</a></li>
+                        <li><a href="#">Revoke Estimate</a></li> 
+                    </ul>
+                </li>
+                
+                
+                <li>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Survey</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="form_basic.html">Physical Survey</a></li>
+                        <li><a href="form_advanced.html">Joint Survey</a></li>
+                        <li><a href="form_wizard.html">Post Repair Survey</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Definition</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="search_results.html">Corporate Settings</a></li>
+                        <li><a href="lockscreen.html">Yard Settings</a></li>
+                        <li><a href="invoice.html">Yard List</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa  fa-file-text-o"></i> <span class="nav-label">Billing</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="toastr_notifications.html">Yard Billing</a></li>
+                        <li><a href="nestable_list.html">Customer Billing</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa  fa-file-text-o"></i> <span class="nav-label">Reports</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#"> Report list </a></li>
+                        <li><a href="#">Create Report</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-question-circle"></i> <span class="nav-label">Help</span>  </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-info-circle"></i> <span class="nav-label">About</span></a>
+                </li>
+             </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg" style="min-height: 307px;">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-success " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom m-t-sm" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to RawData+ Admin Theme.</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="../img/a7.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!--<li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>-->
+                <!--<li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>-->
+            </ul>
+
+        </nav>
+        </div>
+
+
+        <div class="wrapper wrapper-content">
+        <div class="row">
+        <div class="col-lg-12 m-b-sm"><div class="text-center pull-right">
+                               
+                               <a data-toggle="modal" class="btn btn-success " href="#modal-form">Settings <i class="fa fa-cog" aria-hidden="true"></i></a>
+                            </div>
+                       
+                            
+                            <div id="modal-form" class="modal fade " aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                               
+                                                <h2 class="m-t-none m-b">Select</h2>
+
+                                                    <form role="form">
+                                                        <div class="form-group"><label>Region</label> <input type="region" placeholder="Enter region" class="form-control"></div>
+                                                        <div class="form-group"><label>State</label> <input type="region" placeholder="Enter region" class="form-control"></div>
+                                                        <div class="form-group"><label>Location</label> <input type="region" placeholder="Enter region" class="form-control"></div>
+                                                        
+                                                        <div class="form-group"><label>Yard</label> <select class="form-control m-b" name="account">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select>
+</div>
+
+                                                        <div>
+                                                        <div class="text-center">
+                                                            <button class="btn btn-success" type="submit"> 
+                           <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Show</span></button>
+                                                         </div>  
+                                                        </div>
+                                                    </form>
+                                                
+                                                
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    
+                            </div>
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-title">
+                    <a class="btn btn-xs btn-info pull-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                         <h5>Views</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2 class=" dash-head">Thatkal Units</h2>
+                        <!--<p class="text-center"><span class="label label-warning m-xs">A</span><span class="label label-primary m-xs">B</span><span class="label label-success m-xs">C</span></p>-->
+                        <div class=" font-bold text-center m-b-sm">(121 from 3 Yards)
+                        </div>
+                       
+                        <div class="text-center">
+                        <svg class="peity" height="28" width="48">
+                         <rect fill="#23c6c8" x="1.3714285714285717" y="12.444444444444443" width="4.114285714285715" height="15.555555555555557"></rect>
+                         <rect fill="#23c6c8" x="8.228571428571428" y="18.666666666666668" width="4.114285714285716" height="9.333333333333332"></rect>
+                         <rect fill="#23c6c8" x="15.085714285714287" y="0" width="4.1142857142857086" height="28"></rect>
+                         <rect fill="#23c6c8" x="21.942857142857147" y="9.333333333333336" width="4.114285714285707" height="18.666666666666664"></rect>
+                         <rect fill="#23c6c8" x="28.800000000000004" y="12.444444444444443" width="4.114285714285707" height="15.555555555555557"></rect>
+                         <rect fill="#23c6c8" x="35.65714285714286" y="0" width="4.114285714285707" height="28"></rect>
+                         <rect fill="#23c6c8" x="42.51428571428572" y="6.222222222222221" width="4.114285714285707" height="21.77777777777778"></rect></svg>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-title">
+                    <a class="btn btn-xs btn-success pull-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                         <h5>Views</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2 class="dash-head">Est Pending</h2>
+                        <!--<p class="text-center"><span class="label label-warning m-xs">A</span><span class="label label-primary m-xs">B</span><span class="label label-success m-xs">C</span></p>-->
+                        <div class=" font-bold text-center m-b-sm">(121 from 3 Yards)</div>
+                       
+                        <div class="text-center">
+<svg class="peity" height="28" width="64"><polygon fill="#d1e4f6" points="0 27.5 0 12.5 7.111111111111111 18.5 14.222222222222221 0.5 21.333333333333332 9.5 28.444444444444443 12.5 35.55555555555556 0.5 42.666666666666664 6.5 49.77777777777777 18.5 56.888888888888886 12.5 64 21.5 64 27.5"></polygon><polyline fill="none" points="0 12.5 7.111111111111111 18.5 14.222222222222221 0.5 21.333333333333332 9.5 28.444444444444443 12.5 35.55555555555556 0.5 42.666666666666664 6.5 49.77777777777777 18.5 56.888888888888886 12.5 64 21.5" stroke="#0288d1" stroke-width="1" stroke-linecap="square"></polyline></svg>                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-title">
+                        <a class="btn btn-xs btn-primary pull-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                        <h5>Views</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2 class="dash-head">App Pending</h2>
+                        <!--<p class="text-center"><span class="label label-warning m-xs">A</span><span class="label label-primary m-xs">B</span><span class="label label-success m-xs">C</span></p>-->
+                         <div class=" font-bold text-center m-b-sm">(121 from 3 Yards)</div>
+                       
+                        <div class="text-center">
+                        <svg class="peity" height="28" width="24"><path d="M 12 0 A 12 12 0 1 1 2.753841086690528 19.649087876984275 L 7.376920543345264 15.824543938492138 A 6 6 0 1 0 12 6" fill="#18a689"></path><path d="M 2.753841086690528 19.649087876984275 A 12 12 0 0 1 11.999999999999998 0 L 11.999999999999998 6 A 6 6 0 0 0 7.376920543345264 15.824543938492138" fill="#eee"></path></svg></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-title">
+                    <a class="btn btn-xs btn-info pull-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                         <h5>Views</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2 class="dash-head">Doc Pending</h2>
+                        <!--<p class="text-center"><span class="label label-warning m-xs">A</span><span class="label label-primary m-xs">B</span><span class="label label-success m-xs">C</span></p>-->
+                        <div class=" font-bold text-center m-b-sm">(121 from 3 Yards)</div>
+                       
+                        <div class="text-center">
+                        <svg class="peity" height="28" width="48">
+                         <rect fill="#23c6c8" x="1.3714285714285717" y="12.444444444444443" width="4.114285714285715" height="15.555555555555557"></rect>
+                         <rect fill="#23c6c8" x="8.228571428571428" y="18.666666666666668" width="4.114285714285716" height="9.333333333333332"></rect>
+                         <rect fill="#23c6c8" x="15.085714285714287" y="0" width="4.1142857142857086" height="28"></rect>
+                         <rect fill="#23c6c8" x="21.942857142857147" y="9.333333333333336" width="4.114285714285707" height="18.666666666666664"></rect>
+                         <rect fill="#23c6c8" x="28.800000000000004" y="12.444444444444443" width="4.114285714285707" height="15.555555555555557"></rect>
+                         <rect fill="#23c6c8" x="35.65714285714286" y="0" width="4.114285714285707" height="28"></rect>
+                         <rect fill="#23c6c8" x="42.51428571428572" y="6.222222222222221" width="4.114285714285707" height="21.77777777777778"></rect></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-title">
+                    <a class="btn btn-xs btn-success pull-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                         <h5>Views</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h2 class="dash-head">Rep Pending</h2>
+                        <!--<p class="text-center"><span class="label label-warning m-xs">A</span><span class="label label-primary m-xs">B</span><span class="label label-success m-xs">C</span></p>-->
+                        <div class=" font-bold text-center m-b-sm">(121 from 3 Yards)</div>
+                       
+                        <div class="text-center">
+<svg class="peity" height="28" width="64"><polygon fill="#d1e4f6" points="0 27.5 0 12.5 7.111111111111111 18.5 14.222222222222221 0.5 21.333333333333332 9.5 28.444444444444443 12.5 35.55555555555556 0.5 42.666666666666664 6.5 49.77777777777777 18.5 56.888888888888886 12.5 64 21.5 64 27.5"></polygon><polyline fill="none" points="0 12.5 7.111111111111111 18.5 14.222222222222221 0.5 21.333333333333332 9.5 28.444444444444443 12.5 35.55555555555556 0.5 42.666666666666664 6.5 49.77777777777777 18.5 56.888888888888886 12.5 64 21.5" stroke="#0288d1" stroke-width="1" stroke-linecap="square"></polyline></svg>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-title">
+                        <a class="btn btn-xs btn-primary pull-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                        <h5>Views</h5>
+                    </div>
+                    <div class="ibox-content">
+                       <h2 class="dash-head">Rep Comp</h2>
+                         <div class=" font-bold text-center m-b-sm">A=20|B=15|C=25</div>
+                       
+                        <div class="text-center">
+                        <svg class="peity" height="28" width="24"><path d="M 12 0 A 12 12 0 1 1 2.753841086690528 19.649087876984275 L 7.376920543345264 15.824543938492138 A 6 6 0 1 0 12 6" fill="#18a689"></path><path d="M 2.753841086690528 19.649087876984275 A 12 12 0 0 1 11.999999999999998 0 L 11.999999999999998 6 A 6 6 0 0 0 7.376920543345264 15.824543938492138" fill="#18a689"></path></svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-content">
+                        <div>
+                                        
+                            <h2 class="pull-left">
+                                Cost - Expense Recovery
+                            </h2>
+                            <div class="pull-right">
+                            <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-outline btn-success btn-xs dropdown-toggle m-t-sm">Select Graphics<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Graphics-1</a></li>
+                                <li><a href="#">Graphics-2</a></li>
+                                 <li><a href="#">Graphics-3</a></li>
+                                 <li><a href="#">Graphics-4</a></li>
+                                  <li><a href="#">Graphics-5</a></li>
+                            </ul>
+                        </div>
+                    
+                </div>
+                        </div>
+
+              <div class="m-t-sm">
+               <div class="row">
+                   
+                <div class="col-md-6 pull-right">
+                   <img src="../img/pie.png" style="width:260px;">
+                   
+                 </div>
+                
+                     <div class="col-md-6 pie-diagram pull-left m-t">
+                       <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Region </label>
+                            <input type="text" placeholder="Region " class="form-control">
+                         </div>
+                    </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Location</label>
+                            <input type="text" placeholder="Location" class="form-control">
+                         </div>
+                    </div>
+                      <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Yard</label>
+                            <input type="text" placeholder="TAL" class="form-control">
+                         </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                         <label class="control-label" for="price">Cargo</label>
+                         <input type="text" id="price" name="yard_code" value="" placeholder="Yard Code" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                      <label class="control-label" for="quantity">Responsibilty</label>
+                       <input type="text" id="iso_code" name="iso_code" value="" placeholder="Yard Name" class="form-control ">
+                        </div>
+                    </div>
+                     <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Cust Name</label>
+                            <input type="text" placeholder="Customer Name" class="form-control">
+                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                       <label class="control-label" for="quantity">From Date</label>
+                        <input type="text" id="iso_code" name="iso_code" value="" placeholder="Yard Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                      <div class="form-group" id="data_1">
+                        <label class="control-label">To Date</label>
+                          <input type="text" id="currency_name" name="currency_name" value="03/04/2014" placeholder="Currency" disabled="" class="form-control disable-yard">
+                       </div>
+                      </div>
+                      <div class="col-md-6 m-t-n-xxs">
+                        <div class="form-group">
+                           <button class="btn btn-success" type="submit"> 
+                           <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Show</span></button>
+                        </div>
+                       
+                   </div>
+                </div>
+                <div class="col-md-12 m-b m-t">
+                <ul class="stat-list">
+                           <li>
+                             <h2 class="no-margins">2,346</h2>
+                               <small>Total Cost in period</small>
+                                <div class="progress progress-mini">
+                                    <div class="progress-bar" style="width: 48%;"></div>
+                                 </div>
+                              </li>
+                              <li>
+                               <h2 class="no-margins ">4,422</h2>
+                                  <small>Total Expense in perio</small>
+                                     <div class="progress progress-mini">
+                                         <div class="progress-bar" style="width: 60%;"></div>
+                                      </div>
+                                 </li> 
+                           </ul> </div>
+                    
+                        <div class="col-md-12">
+                           <div class="form-group pull-right">
+                            <button class="btn btn-success Yard-text-align" type="submit">
+                             <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">View Report</span></button>
+                            <button class="btn btn-success Yard-text-align" type="submit">
+                              <i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Download Report</span></button>
+                            </div>
+                          </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins box-bg">
+                    <div class="ibox-content">
+                        <div>
+                                        
+                            <h2 class="pull-left">
+                                Repair Analysis
+                            </h2>
+                            <div class="pull-right">
+                            <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-outline btn-success btn-xs dropdown-toggle m-t-sm">Select Graphics<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Graphics-1</a></li>
+                                <li><a href="#">Graphics-2</a></li>
+                                 <li><a href="#">Graphics-3</a></li>
+                                 <li><a href="#">Graphics-4</a></li>
+                                  <li><a href="#">Graphics-5</a></li>
+                            </ul>
+                        </div>
+                    
+                </div>
+                        </div>
+
+              <div class="m-t-sm">
+               <div class="row">
+                   
+                <div class="col-md-6 pull-right">
+                   <img src="../img/pie.png" style="width:260px;">
+                   
+                 </div>
+                
+                     <div class="col-md-6 pie-diagram pull-left m-t">
+                       <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Region </label>
+                            <input type="text" placeholder="Region " class="form-control">
+                         </div>
+                    </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Location</label>
+                            <input type="text" placeholder="Location" class="form-control">
+                         </div>
+                    </div>
+                      <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Yard</label>
+                            <input type="text" placeholder="TAL" class="form-control">
+                         </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                         <label class="control-label" for="price">Cargo</label>
+                         <input type="text" id="price" name="yard_code" value="" placeholder="Yard Code" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                      <label class="control-label" for="quantity">Responsibilty</label>
+                       <input type="text" id="iso_code" name="iso_code" value="" placeholder="Yard Name" class="form-control ">
+                        </div>
+                    </div>
+                     <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label class="control-label" for="status">Cust Name</label>
+                            <input type="text" placeholder="Customer Name" class="form-control">
+                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                       <label class="control-label" for="quantity">From Date</label>
+                        <input type="text" id="iso_code" name="iso_code" value="" placeholder="Yard Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                      <div class="form-group" id="data_1">
+                        <label class="control-label">To Date</label>
+                          <input type="text" id="currency_name" name="currency_name" value="03/04/2014" placeholder="Currency" disabled="" class="form-control disable-yard">
+                       </div>
+                      </div>
+                      <div class="col-md-6 m-t-n-xxs">
+                        <div class="form-group">
+                           <button class="btn btn-success" type="submit"> 
+                           <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Show</span></button>
+                        </div>
+                       
+                   </div>
+                </div>
+                <div class="col-md-12 m-b m-t">
+                <ul class="stat-list">
+                           <li>
+                             <h2 class="no-margins">2,346</h2>
+                               <small>Total Cost in period</small>
+                                <div class="progress progress-mini">
+                                    <div class="progress-bar" style="width: 48%;"></div>
+                                 </div>
+                              </li>
+                              <li>
+                               <h2 class="no-margins ">4,422</h2>
+                                  <small>Total Expense in perio</small>
+                                     <div class="progress progress-mini">
+                                         <div class="progress-bar" style="width: 60%;"></div>
+                                      </div>
+                                 </li> 
+                           </ul> </div>
+                    
+                        <div class="col-md-12">
+                           <div class="form-group pull-right">
+                            <button class="btn btn-success Yard-text-align" type="submit">
+                             <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">View Report</span></button>
+                            <button class="btn btn-success Yard-text-align" type="submit">
+                              <i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Download Report</span></button>
+                            </div>
+                          </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+
+        </div>
+       
+       
+            <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Cost - Expense Recovery</h5>
+                                <div class="pull-right">
+                                    <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-outline btn-success btn-xs dropdown-toggle">Select Graphics<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Graphics-1</a></li>
+                                <li><a href="#">Graphics-2</a></li>
+                                 <li><a href="#">Graphics-3</a></li>
+                                 <li><a href="#">Graphics-4</a></li>
+                                  <li><a href="#">Graphics-5</a></li>
+                            </ul>
+                        </div>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                                <div class="col-md-5 pie-diagram diagram-bg ">
+                        
+                        <div class="form-horizontal p-m">
+                               <div class="form-group"><label class="col-lg-3 control-label">Region </label>
+
+                                    <div class="col-lg-9"><input type="text" placeholder="Region " class="form-control"> 
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-3 control-label">Location</label>
+
+                                    <div class="col-lg-9"><input type="text" placeholder="Region " class="form-control"> 
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-3 control-label">Yard</label>
+
+                                    <div class="col-lg-9"><input type="text" placeholder="TAL" class="form-control"> 
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-3 control-label">Cargo</label>
+
+                                    <div class="col-lg-9"><input type="password" placeholder="yard_code" class="form-control"></div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-3 control-label">Responsibilty</label>
+
+                                    <div class="col-lg-9"><input type="password" placeholder="" class="form-control"></div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-3 control-label">Customer Name</label>
+
+                                    <div class="col-lg-9"><input type="password" placeholder="" class="form-control"></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <button class="btn btn-success m-t-md pull-right" type="submit"> 
+                           <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">Show</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                            
+                            <div class="col-md-4">
+                        <img src="../img/pie.png" style="width:260px;">
+                        
+                    </div>    
+                    <div class="col-lg-3">
+                                    <ul class="stat-list">
+                                        <li>
+                                            <h2 class="no-margins">2,346</h2>
+                                            <small>Total orders in period</small>
+                                            <div class="stat-percent">48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 48%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h2 class="no-margins ">4,422</h2>
+                                            <small>Orders in last month</small>
+                                            <div class="stat-percent">60% <i class="fa fa-level-down text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 60%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h2 class="no-margins ">9,180</h2>
+                                            <small>Monthly income from orders</small>
+                                            <div class="stat-percent">22% <i class="fa fa-bolt text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 22%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12 ">
+                           <div class="form-group pull-right">
+                            <button class="btn btn-success Yard-text-align m-r-sm" type="submit">
+                             <i class="fa fa-eye"></i>&nbsp;&nbsp;<span class="bold">View Report</span></button>
+                            <button class="btn btn-success Yard-text-align" type="submit">
+                              <i class="fa fa-download"></i>&nbsp;&nbsp;<span class="bold">Download Report</span></button>
+                            </div>
+                          </div>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+        
+
+
+        </div>
+
+
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company © 2014-2017
+            </div>
+        </div>
+
+        </div>
+        <div id="right-sidebar" class="">
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
+
+                <ul class="nav nav-tabs navs-3">
+
+                    <li class="active"><a data-toggle="tab" href="#tab-1">
+                        Notes
+                    </a></li>
+                    <li><a data-toggle="tab" href="#tab-2">
+                        Projects
+                    </a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-3">
+                        <i class="fa fa-gear"></i>
+                    </a></li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
+                            <small><i class="fa fa-tim"></i> You have 10 new message.</small>
+                        </div>
+
+                        <div>
+
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a1.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+
+                                        There are many variations of passages of Lorem Ipsum available.
+                                        <br>
+                                        <small class="text-muted">Today 4:21 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a2.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                        <br>
+                                        <small class="text-muted">Yesterday 2:45 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                        <br>
+                                        <small class="text-muted">Yesterday 1:10 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
+                                    </div>
+
+                                    <div class="media-body">
+                                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                        <br>
+                                        <small class="text-muted">Monday 8:37 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a8.jpg">
+                                    </div>
+                                    <div class="media-body">
+
+                                        All the Lorem Ipsum generators on the Internet tend to repeat.
+                                        <br>
+                                        <small class="text-muted">Today 4:21 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a7.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                        <br>
+                                        <small class="text-muted">Yesterday 2:45 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
+                                        <br>
+                                        <small class="text-muted">Yesterday 1:10 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        Uncover many web sites still in their infancy. Various versions have.
+                                        <br>
+                                        <small class="text-muted">Monday 8:37 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary pull-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary pull-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> Settings</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        Show notifications
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Disable Chat
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Enable history
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Show charts
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Offline users
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Global search
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Update everyday
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4>Settings</h4>
+                            <div class="small">
+                                I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 63.0375px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div></div>
+
+
+
+        </div>
+    
+
+    <!-- Mainly scripts -->
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="../js/plugins/flot/jquery.flot.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="../js/plugins/flot/curvedLines.js"></script>
+
+    <!-- Peity -->
+    <script src="../js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="../js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../js/inspinia.js"></script>
+    <script src="../js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="../js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Jvectormap -->
+    <script src="../js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="../js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- Sparkline -->
+    <script src="../js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="../js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="../js/plugins/chartJs/Chart.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+
+            var d1 = [[1262304000000, 6], [1264982400000, 3057], [1267401600000, 20434], [1270080000000, 31982], [1272672000000, 26602], [1275350400000, 27826], [1277942400000, 24302], [1280620800000, 24237], [1283299200000, 21004], [1285891200000, 12144], [1288569600000, 10577], [1291161600000, 10295]];
+            var d2 = [[1262304000000, 5], [1264982400000, 200], [1267401600000, 1605], [1270080000000, 6129], [1272672000000, 11643], [1275350400000, 19055], [1277942400000, 30062], [1280620800000, 39197], [1283299200000, 37000], [1285891200000, 27000], [1288569600000, 21000], [1291161600000, 17000]];
+
+            var data1 = [
+                { label: "Data 1", data: d1, color: '#17a084'},
+                { label: "Data 2", data: d2, color: '#127e68' }
+            ];
+            $.plot($("#flot-chart1"), data1, {
+                xaxis: {
+                    tickDecimals: 0
+                },
+                series: {
+                    lines: {
+                        show: true,
+                        fill: true,
+                        fillColor: {
+                            colors: [{
+                                opacity: 1
+                            }, {
+                                opacity: 1
+                            }]
+                        },
+                    },
+                    points: {
+                        width: 0.1,
+                        show: false
+                    },
+                },
+                grid: {
+                    show: false,
+                    borderWidth: 0
+                },
+                legend: {
+                    show: false,
+                }
+            });
+
+            var lineData = {
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [
+                    {
+                        label: "Example dataset",
+                        backgroundColor: "rgba(26,179,148,0.5)",
+                        borderColor: "rgba(26,179,148,0.7)",
+                        pointBackgroundColor: "rgba(26,179,148,1)",
+                        pointBorderColor: "#fff",
+                        data: [48, 48, 60, 39, 56, 37, 30]
+                    },
+                    {
+                        label: "Example dataset",
+                        backgroundColor: "rgba(220,220,220,0.5)",
+                        borderColor: "rgba(220,220,220,1)",
+                        pointBackgroundColor: "rgba(220,220,220,1)",
+                        pointBorderColor: "#fff",
+                        data: [65, 59, 40, 51, 36, 25, 40]
+                    }
+                ]
+            };
+
+            var lineOptions = {
+                responsive: true
+            };
+
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            new Chart(ctx, {type: 'line', data: lineData, options:lineOptions});
+
+
+        });
+    </script>
+
+
+</body></html>
