@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inteution</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/new-style.css" rel="stylesheet">
+<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header blue-skin">
+          <div class="dropdown profile-element"> 
+          <span> <img alt="image" class="img-circle" src="img/profile_small.jpg" /> 
+          </span> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
+          <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Wilson Thomas</strong> </span> 
+          <span class="text-muted text-xs block">General Manager <b class="caret"></b> </span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+          <div class="logo-element"> InT </div>
+        </li>
+        <li class="active"> <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a> </li>
+        <li> <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Contract</span><span class="fa arrow"></span></a> 
+          <!-- <ul class="nav nav-second-level collapse">
+                        <li><a href="#">View Estimate</a></li>
+                        <li><a href="#">Upload Photos</a></li> 
+                        <li><a href="#">Upload RC</a></li> 
+                    </ul> --> 
+        </li>
+        <li> <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Container</span><span class="fa arrow"></span></a> 
+          <!-- <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Physical Survey</a></li>
+                        <li><a href="#">Joint Survey</a></li>
+                        <li><a href="#">Post Repair Survey</a></li>
+                       
+                    </ul> --> 
+        </li>
+        <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Leasing Company</span><span class="fa arrow"></span></a> 
+          <!-- <ul class="nav nav-second-level collapse">
+                        <li><a href="#">GateIn List</a></li>
+                        <li><a href="#">GateOut List</a></li>
+                        <li><a href="#">In/Out Report</a></li>
+                       
+                    </ul> --> 
+        </li>
+        <li> <a href="#"><i class="fa  fa-file-text-o"></i> <span class="nav-label">One Way Lease</span><span class="fa arrow"></span></a> 
+          <!-- <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Prepare Invoice</a></li>
+                       
+                       
+                    </ul> --> 
+        </li>
+        <li> <a href="#"><i class="fa fa-question-circle"></i> <span class="nav-label">SWAP/IC</span> </a> </li>
+        <li> <a href="#"><i class="fa fa-info-circle"></i> <span class="nav-label">Empty Report</span></a> </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="page-wrapper" class="gray-bg">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header"> <a class="navbar-minimalize minimalize-styl-2 btn btn-success " href="#"><i class="fa fa-bars"></i> </a>
+          <form role="search" class="navbar-form-custom" action="search_results.html">
+            <div class="form-group">
+              <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+            </div>
+          </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li> <span class="m-r-sm text-muted welcome-message">Welcome to Inteution.</span> </li>
+          <li class="dropdown">
+            <button class="btn btn-success " type="button"><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;<span class="bold">Reports</span></button>
+            <ul class="dropdown-menu dropdown-messages">
+              <li>
+                <div class="dropdown-messages-box"> <a href="profile.html" class="pull-left"> <img alt="image" class="img-circle" src="img/a7.jpg"> </a>
+                  <div class="media-body"> <small class="pull-right">46h ago</small> <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small> </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="dropdown-messages-box"> <a href="profile.html" class="pull-left"> <img alt="image" class="img-circle" src="img/a4.jpg"> </a>
+                  <div class="media-body "> <small class="pull-right text-success">5h ago</small> <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small> </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="dropdown-messages-box"> <a href="profile.html" class="pull-left"> <img alt="image" class="img-circle" src="img/profile.jpg"> </a>
+                  <div class="media-body "> <small class="pull-right">23h ago</small> <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small> </div>
+                </div>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block"> <a href="mailbox.html"> <i class="fa fa-envelope"></i> <strong>Read All Messages</strong> </a> </div>
+              </li>
+            </ul>
+          </li>
+          <li> <a href="login.html"> <i class="fa fa-sign-out"></i> Log out </a> </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="row wrapper border-bottom white-bg page-heading">
+      <div class="col-lg-12">
+        <h2>Edit Approved Contract</h2>
+      </div>
+    </div>
+  <div class="wrapper wrapper-content animated fadeIn">
+     <div class="row">
+      <div class="col-lg-12">
+      <div class="ibox float-e-margins box-bg">
+        <div class="ibox-title normal-box-title">
+          <h5 class="m-l-xs">Contract Details</h5>
+        </div>
+        <div class="ibox-content"><!--form-start-->
+          <form method="get" class="form-horizontal">
+
+            <div class="form-group ">
+              <div class="col-md-12">
+              <div class="col-sm-4 border-right ">
+                  <p>
+                    <strong>Contract Number :</strong> <span> CN568974</span>
+                  </p>
+                  <p>
+                   <strong>Contract Type :</strong>  <span>Domestication Containers</span></p>
+              
+              </div>
+               <div class="col-sm-4 border-right ">
+                  <p>
+                   <strong>Reference No :</strong><span>  REF-000567F7-00</span>
+                  </p>
+                                    
+                                    
+                                        <p><span><strong>Line :</strong> Kochi</span>
+                                    </p>
+                                    
+                                </div>
+                               
+                                <div class="col-sm-4">
+                                   
+                                    <p><strong>Company  :</strong><span> Company Name</span></p>
+                                    <p class="text-left">
+                                        <span><strong>Term  :</strong> Short Term Lease</span><br>
+                                        <!-- <span><strong>Line :</strong> Kochi</span> -->
+                                    </p>
+                                   <!--  <p>
+                                        <span><strong>Invoice Date:</strong> Marh 18, 2014</span><br>
+                                        <span><strong>Due Date:</strong> March 24, 2014</span>
+                                    </p> -->
+                                </div>
+                                
+
+               </div>
+                
+                
+                
+              
+              <div class="col-lg-12  m-t ">
+              
+<hr class="m-b-n-xxs">
+                <div  class="col-md-4 m-l-n ">
+                      <div class="ibox float-e-margins border-right ">
+                            
+                            
+                            <div class="ibox-content">
+                  <p>
+                                        <span><strong>DPP Charges  :</strong>1288</span></p>
+                                       <p> <span><strong>Admin Charges(%) :</strong> 20</span></p>
+                                        <p><span><strong>Currency :</strong>INR</span>
+                                    </p>
+                </div>
+                </div>
+                </div>
+               <div  class="col-md-4 ">
+                      <div class="ibox float-e-margins   ">
+                            
+                            
+                            <div class="ibox-content">
+                                        
+                                        <p>
+                                        <span><strong>Build UP  :</strong>23/01/2017</span></p>
+                                        <p><span><strong>Build Down :</strong>23/01/2017</span>
+                                    </p>
+                </div>
+                </div>
+                </div>
+               <div  class="col-md-4 ">
+                      <div class="ibox float-e-margins border-left ">
+                            
+                            
+                            <div class="ibox-content"><p>
+                                        <span><strong>MQC :</strong>No</span></p>
+                                                         <p><span><strong>Agreement Date :</strong>23/01/2017</span></p>
+                                        <p><strong>Valid From:</strong><span>23/01/2017</span>
+                                    </p>
+               </div>
+                </div>
+                </div>
+
+              </div>
+            <div  class="col-md-12 m-b-n-lg">
+               <div class="ibox float-e-margins border-top m-t-n-lg">
+                    <div class="ibox-content">
+                       <div class="col-md-6 border-right">
+                          <p><strong>Onhire and Offhire Locations</strong></p>
+                          <p><span>Kochi,</span><span> Mumbai,</span><span> Delhi</span></p>
+                        </div>
+                        <div class="col-md-6 m-t-n-sm" >
+                          <label class="control-label m-b-xs"><strong>Add More Locations</strong></label>
+                         <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </form>
+          <!--form-->
+          <!--test-start-->
+          
+                                
+                            
+          <!--test-->
+        </div>
+      </div>
+    </div>
+   </div>
+   
+  <!--End-Estimate Details-->
+  
+  <div class="row">
+    <div class="col-lg-12 p-n">
+      <div class="col-lg-6">
+        <div class="ibox float-e-margins box-bg">
+          <div class="ibox-title normal-box-title">
+            <h5 class="m-l-xs">Container Units</h5>
+            <div class="ibox-tools">
+                                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+
+                                        </div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-12 table-responsive">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+              
+                      <th>Container Type</th>
+                      <th>Max Units</th>
+                      <th>Pick-Up Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    
+                      <td>20DV</td>
+                      <td>200</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+                   
+                      <td>20DV</td>
+                      <td>200</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+                    
+                      <td>20DV</td>
+                      <td>200</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+                    
+                      <td>20DV</td>
+                      <td>200</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+                     
+                      <td>20DV</td>
+                      <td>200</td>
+                      <td>200 INR</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ibox float-e-margins box-bg">
+          <div class="ibox-title normal-box-title">
+            <h5 class="m-l-xs">Rental Cost</h5>
+            <div class="ibox-tools">
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+
+                                        </div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                     
+                      <th>Container Type</th>
+                      <th>Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+               
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+                     
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+                     
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                    </tr>
+                    <tr>
+
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                    </tr>
+                  </tbody>
+                </table>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 p-n">
+      <div class="col-lg-6">
+        <div class="ibox float-e-margins box-bg">
+          <div class="ibox-title normal-box-title">
+            <h5 class="m-l-xs">DVR</h5>
+            <div class="ibox-tools">
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+
+                                        </div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-12 table-responsive">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                     
+                      <th>Container Type</th>
+                      <th>Container Cost</th>
+                      <th>Depreciation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                     
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                   
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      
+                      <td>20DV</td>
+                      <td>200 INR</td>
+                      <td>200</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ibox float-e-margins box-bg">
+          <div class="ibox-title normal-box-title">
+            <h5 class="m-l-xs">Handling Cost</h5>
+            <div class="ibox-tools">
+              <a class="collapse-link">
+                <i class="fa fa-chevron-up"></i>
+              </a>
+            </div>
+           
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-12 table-responsive">
+                <ul class="nav nav-pills m-b-md  " role="tablist">
+                  <li role="presentation" class="active"><a href="#Pick-Up" class="t-p" aria-controls="home" role="tab" data-toggle="tab" >Pick Up Handling Cost</a></li>
+                  <li role="presentation"><a href="#Drop-Off" class="t-p" aria-controls="profile" role="tab" data-toggle="tab">Drop Off Handling Cost</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="Pick-Up">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tr>
+                        <th>Location </th>
+                        <th>Container Type</th>
+                        <th>Units</th>
+                        <th>Cost</th>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Kochi</th>
+                        <th>20DV</th>
+                        <td>200</td>
+                        <td>250INR</td>
+                      </tr>
+                      <tr>
+                        <th>40DV</th>
+                        <td>400</td>
+                        <td>350INR</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Mumbai</th>
+                        <th>20DV</th>
+                        <td>200</td>
+                        <td>100INR</td>
+                      </tr>
+                      <tr>
+                        <th>40DV</th>
+                        <td>400</td>
+                        <td>150INR</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="Drop-Off">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tr>
+                        <th>Location </th>
+                        <th>Container Type</th>
+                        <th>Units</th>
+                        <th>Cost</th>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Kochi</th>
+                        <th>20DV</th>
+                        <td>200</td>
+                        <td>20INR</td>
+                      </tr>
+                      <tr>
+                        <th>40DV</th>
+                        <td>400</td>
+                        <td>500INR</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Mumbai</th>
+                        <th>20DV</th>
+                        <td>200</td>
+                        <td>200INR</td>
+                      </tr>
+                      <tr>
+                        <th>40DV</th>
+                        <td>400</td>
+                        <td>100INR</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins box-bg">
+          <div class="ibox-title normal-box-title">
+            <h5 class="m-l-xs">Additional Costs</h5>
+            <div class="ibox-tools">
+              <a class="collapse-link">
+                <i class="fa fa-chevron-up"></i>
+              </a>
+            </div>
+           
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-12 table-responsive">
+               
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="Pick-Up">
+                  <div class="col-md-6 m-b">
+                 <div class="col-md-2"> <label class=" control-label  m-b-xs ">Pick Up</label></div>
+                  <div class="col-md-8"><select name="status" id="status" class="form-control">
+                    <option value="1" selected="">Container Number</option>
+                    <option value="0">Line</option>
+                  </select>
+                </div></div>
+                <div class="col-md-6  m-b">
+                 <div class="col-md-2"> <label class=" control-label  m-b-xs ">Drop off</label></div>
+                  <div class="col-md-8"><select name="status" id="status" class="form-control">
+                    <option value="1" selected="">Container Number</option>
+                    <option value="0">Line</option>
+                  </select>
+                </div></div>
+                    <table class="table table-striped table-hover table-bordered">
+                      <tr>
+                        <th>Container Number</th>
+                        <th>Valid From</th>
+                        <th>Valid Till</th>
+                        <th>Additional Cost</th>
+                        <th>Waiver </th>
+                      </tr>
+                      <tr>
+                        <td>Kochi</td>
+                        <td>27-1-2017</td>
+                        <td>27-1-2017</td>
+                        <td>200</td>
+                        <td>250INR</td>
+                      </tr>
+                      
+                      <tr>
+                       <td>Mumbai</td>
+                       <td>27-1-2017</td>
+                       <td>27-1-2017</td>
+                       <td>200</td>
+                       <td>100INR</td>
+                      </tr>
+                      
+                    </table>
+                     <div class="col-md-12">
+                       <div class="pull-right">
+                        <button class="btn btn-success btn-sm" type="submit" data-toggle="modal"  href="#modal-form"> <span class="bold">Add</span></button>
+                        <button class="btn btn-success  btn-sm" type="submit"> <span class="bold">Edit</span></button>
+                        <button class="btn btn-success btn-sm m-r-n" type="submit"> <span class="bold">Delete</span> </button>
+                    </div>
+                   </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="Drop-Off">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tr>
+                        <th>Location </th>
+                        <th>Container Type</th>
+                        <th>Units</th>
+                        <th>Cost</th>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Kochi</th>
+                        <th>20DV</th>
+                        <td>200</td>
+                        <td>20INR</td>
+                      </tr>
+                      <tr>
+                        <th>40DV</th>
+                        <td>400</td>
+                        <td>500INR</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Mumbai</th>
+                        <th>20DV</th>
+                        <td>200</td>
+                        <td>200INR</td>
+                      </tr>
+                      <tr>
+                        <th>40DV</th>
+                        <td>400</td>
+                        <td>100INR</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+   </div>
+   <div class="row m-b-xs" >
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins box-bg">
+        <div class="ibox-content col-lg-12">
+          <div class="col-sm-5 pull-left m-l-n m-b-n-sm">
+            <div class="form-group">
+             <label class="control-label m-b-xs ">Remark</label>
+              <textarea class="form-textarea"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-5 pull-right ">
+            <div class="form-group pull-right m-t-lg ">
+              <button class="btn btn-success Yard-text-align m-r-xxs btn-sm" type="submit"> <span class="bold">Update Contract</span> </button>
+              <button class="btn btn-success Yard-text-align m-r-xxs btn-sm" type="submit"> <span class="bold"> Reset </span> </button>
+              <button class="btn btn-success Yard-text-align btn-sm" type="submit"><span class="bold">Back</span></button>
+            </div>
+          </div>
+        </div>
+        <!--End-Button--> 
+      </div>
+    </div>
+    </div>
+ 
+<!--End--main-wraper-->
+<div class="footer">
+  <div class="pull-right"> 10GB of <strong>250GB</strong> Free. </div>
+  <div> <strong>Copyright</strong> Example Company &copy; 2014-2017 </div>
+</div>
+</div>
+</div>
+
+<!-- add-new-items-popup-Container Units -->
+<div id="modal-form" class="modal fade" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 table-responsive">
+            <table class="table  table-hover">
+              <thead>
+                <tr>
+                  <th>Container Number  </th>
+                  <th>Valid From  </th>
+                  <th>Valid Till  </th>
+                  <th>Additional Cost </th>
+                  <th>Waiver</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                </tr>
+              </tbody>
+            </table>
+            <form action="#" class="b-dash-20 m-b" id="dropzoneForm">
+              Add Row
+            </form>
+            <div class="col-md-12">
+              <div class="pull-right">
+                <button class="btn btn-success btn-sm" type="submit"> <span class="bold">Submit</span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- add-new-items-popup-Rental Cost -->
+<div id="modal-form-1" class="modal fade" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 table-responsive">
+            <table class="table  table-hover">
+              <thead>
+                <tr>
+                  <th>Container Type</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                </tr>
+              </tbody>
+            </table>
+            <form action="#" class="b-dash-20 m-b" id="dropzoneForm">
+              Add Row
+            </form>
+            <div class="col-md-12">
+              <div class="pull-right">
+                <button class="btn btn-success btn-sm" type="submit"> <span class="bold">Submit</span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- add-new-items-popup-DVR-->
+<div id="modal-form-2" class="modal fade" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 table-responsive">
+            <table class="table  table-hover">
+              <thead>
+                <tr>
+                  <th>Container Type</th>
+                  <th>Container Cost</th>
+                  <th>Depreciation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                </tr>
+              </tbody>
+            </table>
+            <form action="#" class="b-dash-20 m-b" id="dropzoneForm">
+              Add Row
+            </form>
+            <div class="col-md-12">
+              <div class="pull-right">
+                <button class="btn btn-success btn-sm" type="submit"> <span class="bold">Submit</span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- add-new-items-popup-Handling Cost-->
+<div id="modal-form-3" class="modal fade" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 table-responsive">
+            <table class="table  table-hover">
+              <thead>
+                <tr>
+                  <th>Location </th>
+                  <th>Container Type</th>
+                  <th>Units</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                <tr>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                  <td><input type="text" class="form-control form-box-h form-new-f input-box-b"></td>
+                </tr>
+              </tbody>
+            </table>
+            <form action="#" class="b-dash-20 m-b" id="dropzoneForm">
+              Add Row
+            </form>
+            <div class="col-md-12">
+              <div class="pull-right">
+                <button class="btn btn-success btn-sm" type="submit"> <span class="bold">Submit</span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Mainly scripts --> 
+<script src="js/jquery-2.1.1.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script> 
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+
+<!-- Custom and plugin javascript --> 
+<script src="js/inspinia.js"></script> 
+<script src="js/plugins/pace/pace.min.js"></script>
+</body>
+</html>
